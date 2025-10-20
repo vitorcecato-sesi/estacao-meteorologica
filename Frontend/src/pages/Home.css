@@ -1,0 +1,97 @@
+/* ...existing code... */
+
+.home {
+    display: block;
+    min-height: 100vh;
+    background: #fff;
+    color: #111;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+}
+
+.hero-title {
+    font-family: Crimson Text, serif;
+    font-size: 10em;
+    line-height: 1;
+    margin: 0.5em 0 1em;
+    font-weight: 400;
+    color: #0b0b0b;
+}
+
+.hero-card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 4em;
+    max-width: 920px;
+    height: 280px;
+    padding-top: 5em;
+}
+
+.card-bg {
+    position: absolute;
+    width: 115em;
+    height: 78%;
+    background: #8E9C78;
+    border-radius: 30px;
+}
+
+.card-img {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3);
+    transform: translateY(-85px);
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.trusted-label {
+    color: #6F6F6F;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 2.7em;
+    font-family: DM Sans, sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.trusted-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30em;
+    padding-top: 2em;
+}
+
+.trusted-logos img {
+    height: 2.3em;
+    opacity: 0.5;
+}
+
+/* responsive */
+@media (max-width:900px) {
+    .hero-title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .hero-card {
+        height: 220px;
+    }
+
+    .card-img {
+        width: 78%;
+        transform: translateY(-10px);
+        max-width: 380px;
+    }
+
+    .trusted-logos {
+        gap: 36px;
+    }
+}
+
+/* ...existing code... */
