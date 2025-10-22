@@ -1,0 +1,27 @@
+.tituloPagina {
+    padding-left: 5em;
+    padding-top: 1em;
+}
+
+.tituloPagina h1 {
+    display: inline-block;
+    font-family: "CImson Text", serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: -2px;
+    background: linear-gradient(to left, #485C11 8px, transparent 8px);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 8px 80%;
+    padding-left: 0.8em;
+}
+
+.gridPerguntasRespostas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em 1em;    
+    justify-items: center;
+    align-items: start;
+    padding-left: 10em;
+    padding-right: 10em;
+}
