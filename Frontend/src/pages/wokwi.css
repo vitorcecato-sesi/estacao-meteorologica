@@ -1,0 +1,55 @@
+.titulo1 { 
+    font-size: 1em; 
+    font-weight: bold; 
+    margin-bottom: 2em;
+    border-left: 0.3em solid #767676; 
+    padding-left: 1em;
+    margin-left: 4em;
+}
+.imagem-wokwi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+
+    border-radius: 10px;
+;
+}
+.blockDeExplicação{
+align-items: center;
+    background-color: #7B8E5C;
+
+}
+.imgDoLado{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    text-align: justify;
+    width: 40em;
+    margin: auto;
+
+}
+.tituloDaExplicação{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row ;
+
+}
+.listradeSeparação{
+ background-color: #49503E;
+ width: 100%;
+    height: 0.5em;
+}
+    
+.imgDoLado2{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: center;
+    text-align: justify;
+    width: 57em;
+    margin: auto;
+
+}
