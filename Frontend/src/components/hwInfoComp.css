@@ -1,0 +1,43 @@
+.hwComponentesBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 2px solid #165700;
+    border-radius: 1em;
+
+    width: 40vw;
+    height: 40vh;
+}
+
+.hwComponentesImg {
+    width: 20vh;
+    height: 20vh;
+    padding: 0.5em;
+    border: 2px solid #84848446;
+    border-radius: 1em;
+}
+
+.hwComponentesTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 80%;
+}
+
+.hwComponentesTexto h2 {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.hwComponentesTexto p {
+    font-size: 0.9em;
+    text-align: justify;
+}
