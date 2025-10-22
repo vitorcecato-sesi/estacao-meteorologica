@@ -12,6 +12,7 @@ import Vitor from "../assets/Img6R.png";
 
 import "./Equipe.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function Equipe() {
   return (
@@ -62,18 +63,18 @@ export default function Equipe() {
           <section className="equipe-container">
             <div className="integrante">
               <div className="hover-card">
-                <img src={Laura} alt="Laura Betti" />
+                <img src={Laura} alt="Laura Betti" className="ImgIn"/>
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Laura Betti</p>
-                    <p className="funcao-hover">Pesquisas e imagens das páginas</p>
-                    <p className="funcao-hover">Wireframe ( Software )</p>
-                    <p className="funcao-hover">Programação ( Página Software)</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•Pesquisas e imagens das páginas</p>
+                    <p className="funcao-hover">•Wireframe ( Software )</p>
+                    <p className="funcao-hover">•Programação ( Página Software)</p>
                   </div>
                 </div>
               </div>
-              <p>Laura Betti</p>
+              <p className="Nome">Laura Betti</p>
             </div>
 
             <div className="integrante">
@@ -82,13 +83,13 @@ export default function Equipe() {
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Lucas Casagrande</p>
-                    <p className="funcao-hover">Wireframe ( Projeto , Perguntas e Respostas , Resultados )</p>
-                    <p className="funcao-hover">Programação ( Página Projeto e Resultados )</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•Wireframe ( Projeto , Perguntas e Respostas , Resultados )</p>
+                    <p className="funcao-hover">•Programação ( Página Projeto e Resultados )</p>
                   </div>
                 </div>
               </div>
-              <p>Lucas Casagrande</p>
+              <p className="Nome">Lucas Casagrande</p>
             </div>
 
             <div className="integrante">
@@ -97,14 +98,14 @@ export default function Equipe() {
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Milena</p>
-                    <p className="funcao-hover">Pesquisas e imagens das páginas</p>
-                    <p className="funcao-hover">Wireframe ( Equipe e Hardware )</p>
-                    <p className="funcao-hover">Programação ( Página Equipe )</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•Pesquisas e imagens das páginas</p>
+                    <p className="funcao-hover">•Wireframe ( Equipe e Hardware )</p>
+                    <p className="funcao-hover">•Programação ( Página Equipe )</p>
                   </div>
                 </div>
               </div>
-              <p>Milena</p>
+              <p className="Nome">Milena</p>
             </div>
           </section>
 
@@ -116,13 +117,13 @@ export default function Equipe() {
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Pietro Melle</p>
-                    <p className="funcao-hover">WireFrame (Header e Footer e  Home )</p>
-                    <p className="funcao-hover">Programação ( Página Perguntas e Respostas , NavBar , Header , Footer e Home )</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•WireFrame (Header e Footer e  Home )</p>
+                    <p className="funcao-hover">•Programação ( Página Perguntas e Respostas , NavBar , Header , Footer e Home )</p>
                   </div>
                 </div>
               </div>
-              <p>Pietro Melle</p>
+              <p className="Nome">Pietro Melle</p>
             </div>
 
             <div className="integrante">
@@ -131,13 +132,13 @@ export default function Equipe() {
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Pyetro Joaquim</p>
-                    <p className="funcao-hover">Wireframe ( Wooki )</p>
-                    <p className="funcao-hover">Programação ( Página Wooki )</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•Wireframe ( Wooki )</p>
+                    <p className="funcao-hover">•Programação ( Página Wooki )</p>
                   </div>
                 </div>
               </div>
-              <p>Pyetro Joaquim</p>
+              <p className="Nome">Pyetro Joaquim</p>
             </div>
 
             <div className="integrante">
@@ -146,15 +147,15 @@ export default function Equipe() {
                 <div className="hover-info">
                   <div className="foto-hover"></div>
                   <div className="texto-hover">
-                    <p className="nome-hover">Vitor Geraldo</p>
-                    <p className="funcao-hover">Criação do GitHub</p>
-                    <p className="funcao-hover">Produção do Hardware do Wooki</p>
-                    <p className="funcao-hover">Programação (Página Hardware )</p>
-                    <p className="funcao-hover">Programação do arduino IDE</p>
+                    <p className="nome-hover">Funções</p>
+                    <p className="funcao-hover">•Criação do GitHub</p>
+                    <p className="funcao-hover">•Produção do Hardware do Wooki</p>
+                    <p className="funcao-hover">•Programação (Página Hardware )</p>
+                    <p className="funcao-hover">•Programação do arduino IDE</p>
                   </div>
                 </div>
               </div>
-              <p>Vitor Geraldo</p>
+              <p className="Nome">Vitor Geraldo</p>
             </div>
           </section>
         </section>
@@ -176,6 +177,7 @@ export default function Equipe() {
           </section>
         </section>
       </article>
+      <Footer />
     </>
   );
 }
