@@ -1,18 +1,26 @@
-import "./Hardware.css";
 
-import Navbar from "../components/Navbar";
-import hwImageHeader from "../assets/hardware-header.png";
-import HwInfoComp from "../components/hwInfoComp";
-import imgLed from "../assets/hwLed.png";
-import imgJumpers from '../assets/hwJumpers.png';
-import imgResistor from '../assets/hwResistor.png';
-import imgProtoboard from '../assets/hwProtoboard.png';
-import imgUSB from '../assets/hwUSB.png';
-import imgDHT11 from '../assets/hwDHT11.png';
-import imgMQ135 from '../assets/hwMQ135.png';
-import imgESP32 from '../assets/hwESP32.png';
+// Estilização
+  import "./Hardware.css";
+//.
 
-export default function Hardware() {
+// Componentes
+  import Navbar from "../components/Navbar";
+  import HwInfoComp from "../components/hwInfoComp";
+//.
+
+// Imagens
+  import hwImageHeader from "../assets/hardware-header.png";
+  import imgLed from "../assets/hwLed.png";
+  import imgJumpers from '../assets/hwJumpers.png';
+  import imgResistor from '../assets/hwResistor.png';
+  import imgProtoboard from '../assets/hwProtoboard.png';
+  import imgUSB from '../assets/hwUSB.png';
+  import imgDHT11 from '../assets/hwDHT11.png';
+  import imgMQ135 from '../assets/hwMQ135.png';
+  import imgESP32 from '../assets/hwESP32.png';
+//.
+
+  export default function Hardware() {
   return (
     <>
       <section className="hwBody">
