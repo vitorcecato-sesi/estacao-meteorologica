@@ -1,0 +1,75 @@
+/* Padronizando as cores para facilitar o uso */
+:root {
+  --background: #485C11;
+  --selecionado: black;
+  --naoSelecionado: gray;
+}
+
+/* Container total da NAVBAR, onde agrupa todas as outras sections */
+.navbar {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+}
+
+/* Section do texto "Grupo 3" */
+.logoTexto {
+  font-size: 30px;
+  font-family: Dm Sans, sans-serif;
+  display: flex;
+  align-items: center;
+  letter-spacing: -2px;
+  margin-left: 3em;
+}
+
+/* Section do menu das páginas (links) */
+.navlinks {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  font-family: dm sans, sans-serif;
+  font-size: 16px;
+}
+
+/* Cada página (link) */
+.navlinks a {
+  text-decoration: none;
+  color: var(--naoSelecionado);
+  padding: 8px 6px;
+  position: relative;
+  font-weight: bold;
+}
+
+/* A página (link) que estiver selecionado, muda a cor do texto para preto, e deixa as outras em cinza */
+.navlinks a.active,
+.navlinks a[aria-current="page"] {
+  color: var(--selecionado);
+}
+
+/* Definições para a página selecionada (deixa a barra verde em baixo do texto) */
+.navlinks a.active::after,
+.navlinks a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--background);
+  border-radius: 4px;
+  bottom: -3px;
+}
+
+/* Botão GitHub que leva ao repositório do projeto */
+.botaoGitHub {
+  background: var(--background);
+  color: white;
+  padding: 14px 23px;
+  border-radius: 100px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-family: DM sans, sans-serif;
+  margin-right: 3em;
+}
