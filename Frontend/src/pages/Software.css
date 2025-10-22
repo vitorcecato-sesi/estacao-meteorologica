@@ -1,0 +1,167 @@
+.headerPaginaSoftware{
+    flex-direction: row;
+    display: flex;
+    gap: 2em;
+}
+
+.simboloSoftware{
+    height: 12vh;
+    padding-top: 5em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.simboloSoftware:hover {
+    transform: rotateY(180deg); /* Gira 360 graus no sentido horário */
+}
+
+.enfeiteSoftware{
+    padding-left: 1em;
+    font-size: 5em;
+    color: rgb(75, 75, 75);
+}
+
+.tituloSoftware{
+    font-size: 5.5em;
+    font-family: Crimson Text, serif;
+    font-weight: 400;
+}
+
+.blocoArduinoIDE{
+    background-color: #8E9C78;
+    height: 40vh;
+    font-family: Crimson Text, serif;
+    font-size: 1.1em;
+}
+
+.logoArduinoIDE{
+    height: 35vh;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    background-color: #8CBC76;
+    transition: 0.5s; /* Transição suave */
+}
+
+.logoArduinoIDE:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do elemento */
+    transition: 0.5s; /* Transição suave */
+}
+
+.blocoArduinoIDE{
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    justify-content: space-around;
+}
+
+.paragrafoArduinoIDE{
+    width: 40vw;
+    font-size: 1.2em;
+}
+
+.blocoConfiguracoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.textoConfiguracoes{
+    width: 40vw;
+    font-family: Crimson Text, serif;
+    font-size: 1.2em;
+}
+
+.fotoConfiguracoes{
+    height: 20vh;
+} 
+
+.paragrafoBoardEPorta{
+    background-color: #BCDAB1;
+    height: 26vh;
+    width: 30vw;
+    padding: 4em;
+    border-radius: 5em;
+    font-family: Crimson Text, serif;
+    font-size: 1.2em;
+    padding-bottom: 5em;
+}
+
+.blocoBoardEPorta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2em;
+    align-items: center;
+    align-self: center;
+}
+
+.fotoBoardEPorta{
+    height: 58vh;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.tituloPartesCodigo{
+    font-family: Crimson Text, serif;
+}
+
+
+/* ---------------------------------------- */
+
+.softwareContainer{
+    padding: 1em;
+}
+
+.softwareTabs{
+    display: flex;
+    gap: 1rem;
+    
+}
+
+.softwareTab{
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+
+.softwareTab:hover{
+    transform: translateY(-2px);
+}
+
+.softwareTab.active{
+    background: #8E9C78;
+    border-color: rgba(0,0,0,0.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.softwareContent{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* painel visível / oculto */
+.tabPanel{
+    display: flex;
+    align-items: center;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    background-color: #8E9C78;
+    padding-left: 15em;
+    padding-right: 15em;
+    gap: 10em;
+}
+
+.tabPanel.hide{
+    display: none;
+    opacity: 0;
+    transform: translateY(6px);
+}
+
+.tabImage{
+    width: 50vw;
+}   

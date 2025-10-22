@@ -6,6 +6,7 @@
 
 // Páginas
 import Home from './pages/Home'
+import Software from './pages/Software'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} /> 
+          <Route path='/Software' element={<Software/>} /> 
         </Routes>
       </BrowserRouter>
     </>
