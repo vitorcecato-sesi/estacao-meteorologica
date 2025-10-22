@@ -1,0 +1,95 @@
+.equipe-img-texto {
+display: flex;
+align-items: center;
+background-color: #596f1c;
+}
+
+.ImgEquipe {
+width: 30em;
+height: auto;
+margin: 2rem;
+border-radius: 2rem;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.Titulo-Equipe {
+color: #37470b; 
+margin-bottom: 4rem;
+background-color: #93b929;
+padding: 0.5rem 1rem;
+border-radius: 1rem;
+}
+
+.Texto-Equipe {
+color: #FFFFFF;
+font-size: 1.2rem;
+line-height: 1.6;
+width:55rem ;
+margin-top: -2rem;
+}
+
+.blequipe-texto {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-left: 7rem;
+}
+
+.equipe-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha se não couber */
+  justify-content: center; /* Centraliza o grupo */
+  gap: 40px; /* Espaçamento entre os integrantes */
+  margin-top: 20px;
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.integrante img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50% 0 50% 50%; /* Lado direito redondo e lado esquerdo reto */
+  border: 2px solid #4CAF50;
+  object-fit: cover;
+}
+
+.integrante p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.equipe-texto-logo {
+display: flex;
+align-items: center;
+}
+
+.blequipe-textologo{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+background-color: #FFF69D;
+padding: 1rem 2rem;
+ border-radius: 0 20px 20px 0;
+ width: 70rem;
+ margin-right: 6rem;
+}
+
+.Titulo-Logo {
+color: #FFF69D; 
+margin-bottom: 1rem;
+background-color: #b5aa47;
+padding: 0.5rem 1rem;
+border-radius: 1rem;
+}
+
+.Img-Logo {
+width: 15em;    
+height: auto;
+margin: 2rem;
+}
+
