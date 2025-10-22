@@ -85,6 +85,7 @@
 
 .Titulo-In {
   margin-left: 5rem;
+  margin-top: 3rem;
   margin-bottom: 5.5rem;
   font-family: "DM Sans", sans-serif;
   font-size: 20px;
@@ -209,7 +210,7 @@
   align-items: flex-start;
   background-color: #fff69d;
   padding: 1rem 2rem;
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 50px 50px 0;
   width: 75rem;
   margin-right: 6rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
