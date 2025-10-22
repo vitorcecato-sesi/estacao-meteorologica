@@ -1,60 +1,75 @@
+/* ============================
+   SEÇÃO PRINCIPAL - QUEM SOMOS
+============================ */
 .equipe-img-texto {
-display: flex;
-align-items: center;
-background-color: #596f1c;
+  display: flex;
+  align-items: center;
+  background-color: #596f1c;
 }
 
 .ImgEquipe {
-width: 30em;
-height: auto;
-margin: 2rem;
-border-radius: 2rem;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  width: 23em;
+  height: auto;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  margin-left: 6rem;
 }
 
 .Titulo-Equipe {
-color: #37470b; 
-margin-bottom: 4rem;
-background-color: #93b929;
-padding: 0.5rem 1rem;
-border-radius: 1rem;
+  color: #37470b;
+  margin-bottom: 4rem;
+  background-color: #93b929;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
 }
 
 .Texto-Equipe {
-color: #FFFFFF;
-font-size: 1.2rem;
-line-height: 1.6;
-width:55rem ;
-margin-top: -2rem;
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  width: 55rem;
+  margin-top: -2rem;
 }
 
 .blequipe-texto {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-margin-left: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 3rem;
+}
+
+/* ============================
+   BLOCO DE INTEGRANTES
+============================ */
+.Bloco-Integrantes {
+  margin-top: 3rem;
+}
+
+.Titulo-In {
+  margin-bottom: 1rem;
+  font-family: Dm Sans, sans-serif;
+  font-size: 20px;
+  margin-left: 5rem;
+  margin-bottom: 5.5rem;
 }
 
 .equipe-container {
   display: flex;
-  flex-wrap: wrap; /* Permite quebrar linha se não couber */
-  justify-content: center; /* Centraliza o grupo */
-  gap: 40px; /* Espaçamento entre os integrantes */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15rem;
   margin-top: 20px;
+  margin-bottom: 6rem;
 }
 
 .integrante {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.integrante img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50% 0 50% 50%; /* Lado direito redondo e lado esquerdo reto */
-  border: 2px solid #4CAF50;
-  object-fit: cover;
+  position: relative;
+  transition: all 0.4s ease;
 }
 
 .integrante p {
@@ -63,33 +78,187 @@ margin-left: 7rem;
   font-size: 14px;
 }
 
-.equipe-texto-logo {
-display: flex;
-align-items: center;
+/* ============================
+   HEADER E DECORAÇÕES
+============================ */
+.headerPaginaEquipe {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  align-items: center;
+  margin-left: 6rem;
+  margin-top: -4rem;
 }
 
-.blequipe-textologo{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-background-color: #FFF69D;
-padding: 1rem 2rem;
- border-radius: 0 20px 20px 0;
- width: 70rem;
- margin-right: 6rem;
+.simboloEquipe {
+  height: 12vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+.simboloEquipe:hover {
+  transform: rotateY(180deg);
+}
+
+.enfeiteEquipe {
+  font-size: 6em;
+  color: rgb(75, 75, 75);
+}
+
+.tituloEquipe {
+  font-size: 6em;
+  font-family: Crimson Text, serif;
+  font-weight: 600;
+}
+
+/* ============================
+   LOGO E TEXTO FINAL
+============================ */
+.equipe-texto-logo {
+  display: flex;
+  align-items: center;
+}
+
+.blequipe-textologo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #FFF69D;
+  padding: 1rem 2rem;
+  border-radius: 0 20px 20px 0;
+  width: 75rem;
+  margin-right: 6rem;
 }
 
 .Titulo-Logo {
-color: #FFF69D; 
-margin-bottom: 1rem;
-background-color: #b5aa47;
-padding: 0.5rem 1rem;
-border-radius: 1rem;
+  color: #FFF69D;
+  margin-bottom: 1rem;
+  background-color: #b5aa47;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  margin-left: 23rem;
 }
 
 .Img-Logo {
-width: 15em;    
-height: auto;
-margin: 2rem;
+  width: 13em;
+  height: auto;
+  margin: 2rem;
+  background-color: #596f1c;
+  border-radius: 50%;
 }
 
+.texto-expli {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ============================
+   NOVO DESIGN DOS CARDS
+============================ */
+.hover-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3ffe6;
+  border: 2px solid #4CAF50;
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+/* Imagem principal dentro do card */
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+
+/* Efeito de expansão lateral */
+.hover-card:hover {
+  width: 22rem; /* cresce lateralmente */
+  border-radius: 2rem;
+  justify-content: flex-start;
+  padding-left: 1rem;
+}
+
+/* Imagem se ajusta ao crescer */
+.hover-card:hover img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-right: 1.2rem;
+}
+
+/* Texto aparece ao lado */
+.hover-info {
+  opacity: 0;
+  position: absolute;
+  left: 8rem;
+  transition: all 0.5s ease;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hover-card:hover .hover-info {
+  opacity: 1;
+  left: 9rem;
+}
+
+/* Texto dentro do card lateral */
+.nome-hover {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.funcao-hover {
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.3rem;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media (max-width: 900px) {
+  .equipe-container {
+    gap: 5rem;
+  }
+
+  .hover-card {
+    width: 7em;
+    height: 7em;
+  }
+
+  .hover-card:hover {
+    width: 90%;
+    height: auto;
+  }
+
+  .hover-info {
+    position: static;
+    opacity: 1;
+    margin-left: 1rem;
+  }
+
+  .Texto-Equipe {
+    width: auto;
+    margin: 1rem;
+  }
+
+  .blequipe-textologo {
+    width: auto;
+    margin-right: 0;
+  }
+
+  .Titulo-Logo {
+    margin-left: 0;
+  }
+}
