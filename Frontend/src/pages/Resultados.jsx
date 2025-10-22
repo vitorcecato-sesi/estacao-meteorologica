@@ -1,4 +1,5 @@
 import "./Resultados.css";
+
 import projeto2 from "../assets/projeto2.png";
 import projeto3 from "../assets/projeto3.png";
 import projeto4 from "../assets/projeto4.png";
@@ -6,10 +7,14 @@ import projeto5 from "../assets/projeto5.png";
 import projeto6 from "../assets/projeto6.png";
 import projeto7 from "../assets/projeto7.png";
 
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
+
 function Resultados() {
 return (
 <>
-{/* Header */}
+<Navbar/>
 <h1 className="tituloResultados">Resultados</h1>
 <p className="paragrafoResultados">Durante o processo de construção do protótipo, foi possível compreender de forma prática como ocorre a leitura de sensores ambientais e a transmissão de dados em tempo real através do protocolo MQTT, utilizando o servidor Mosquitto. O projeto proporcionou uma visão completa do funcionamento de um sistema IoT, desde a coleta das informações de temperatura, umidade e qualidade do ar, até o envio e visualização dos dados em um cliente MQTT instalado no celular. Além disso, a experiência contribuiu para o aprimoramento dos conhecimentos em eletrônica aplicada, lógica de programação, configuração de redes sem fio e análise de dados ambientais.</p>
 <hr className="divisaoResultados"/>
@@ -29,7 +34,7 @@ return (
     <img src={projeto6}></img>
     <img src={projeto7}></img>
 </section>
-{/* Footer */}
+<Footer/>
 </>
 )
 }

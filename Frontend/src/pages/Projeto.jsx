@@ -2,7 +2,6 @@ import "./Projeto.css";
 import diagrama from "../assets/diagrama.png";
 import fotoProjeto from "../assets/projeto1.png";
 
-
 function Projeto() {
     return (
         <>
