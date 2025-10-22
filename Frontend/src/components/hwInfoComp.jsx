@@ -5,7 +5,7 @@ export default function HwInfoComp(props) {
     return (
         <>
         {props.lado === "L" ?
-            <section className={"hwComponentesBox"}>
+            <section className={"hwComponentesBox hwLeft"}>
                 <img className="hwComponentesImg" src={props.imgSrc} alt={props.imgAlt} />
                 <section className="hwComponentesTexto">
                     <h2>{props.Titulo}</h2>
@@ -14,8 +14,8 @@ export default function HwInfoComp(props) {
             </section>
             
             :
-            
-            <section className={"hwComponentesBox"}>
+                
+            <section className={"hwComponentesBox hwRight"}>
                 <section className="hwComponentesTexto">
                     <h2>{props.Titulo}</h2>
                     <p>{props.Desc}</p>
