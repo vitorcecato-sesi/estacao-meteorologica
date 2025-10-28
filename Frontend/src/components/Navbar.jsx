@@ -21,7 +21,7 @@ export default function Navbar() {
         <NavLink to="/simulacao"> Simulação Wokwi </NavLink>
         <NavLink to="/hardware"> Hardware </NavLink>
         <NavLink to="/software"> Software </NavLink>
-        <NavLink to="/perguntas"> Perguntas e Respostas </NavLink>
+        <NavLink to="/perguntasRespostas"> Perguntas e Respostas </NavLink>
         <NavLink to="/resultados"> Resultados </NavLink>
         <NavLink to="/equipe"> Equipe </NavLink>
       </nav>
