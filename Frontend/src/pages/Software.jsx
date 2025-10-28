@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 import "./Software.css";
 import Navbar from "../components/Navbar";
@@ -16,19 +17,19 @@ const tabs = [
   {
     id: "config",
     title: "Configuração Inicial",
-    img: {fotoConfiguracaoInicial}, // substitua pelo caminho real
+    img: fotoConfiguracaoInicial, // substitua pelo caminho real
     text: "O código-fonte, desenvolvido no formato .ino, foi estruturado para realizar de forma contínua a coleta e o envio das informações captadas pelos sensores. No início do programa, estão as definições dos pinos utilizados, variáveis e parâmetros de rede, como o nome da rede Wi-Fi (SSID), senha e o endereço do broker MQTT (Mosquitto).",
   },
   {
     id: "setup",
     title: "Setup e Loop",
-    img: {fotoLoopSetup},
+    img: fotoLoopSetup,
     text: "No setup(), são inicializados a comunicação serial, os sensores e a conexão Wi-Fi, além da definição do servidor MQTT. No loop(), o ESP32 realiza a leitura da temperatura, umidade e qualidade do ar, processa essas informações e as envia para o servidor MQTT por meio de tópicos específicos.",
   },
   {
     id: "leds",
     title: "LEDs",
-    img:{fotoLeds},
+    img: fotoLeds,
     text: "O sistema também aciona os LEDs de status e alerta, permitindo uma resposta visual de acordo com as condições ambientais detectadas — por exemplo, indicando temperatura elevada, boa qualidade do ar ou presença de gases nocivos.",
   },
 ];
@@ -113,7 +114,9 @@ export default function Software() {
         />
       </section>
 
-      <section className="softwareContainer">
+      <hr />
+
+      <section className="blocoPartesCodigo">
         <h1 className="tituloPartesCodigo"> Partes Fundamentais do Código Fonte </h1>
         {/* 
         Navegação das abas: um nav que contém botões para cada aba.
@@ -133,15 +136,16 @@ export default function Software() {
               aria-selected={active === tab.id} // ARIA: true se selecionada, false se não; ajuda leitores de tela
             >
               {tab.title} {/* Texto do botão é o título da aba */}
+
             </button>
           ))}
         </nav>
 
         {/* 
-        Conteúdo das abas: um div que contém os painéis de conteúdo.
+        Conteúdo das abas: uma section que contém os painéis de conteúdo.
         Apenas o painel da aba ativa é mostrado.
         */}
-        <div className="softwareContent">
+        <section className="softwareContent">
           {/* 
         Mapeia o array 'tabs' novamente para criar um painel (article) para cada aba.
         Cada painel é mostrado ou escondido baseado na aba ativa.
@@ -162,8 +166,20 @@ export default function Software() {
               </div>
             </article>
           ))}
-        </div>
+        </section>
       </section>
+
+      <article>
+        <Link to="/sobre" className="linkIDE"> Clique aqui para ver o codigo fonte completo e comentado! </Link>
+      </article>
+
+      <br/>
+
+      <article className="ultimoParagrafo">
+        <p>
+          Essa integração entre hardware e software permite que os dados sejam monitorados em tempo real através de um cliente MQTT instalado em um celular ou computador. O código foi amplamente comentado para facilitar a compreensão de cada etapa, destacando a lógica de funcionamento, as conexões de rede e o controle dos componentes. Assim, a seção de software demonstra a importância da programação no contexto da IoT, unindo sensores, conectividade e automação em um único sistema inteligente.
+        </p>
+      </article>
     </>
   );
 }
