@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import "./Software.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 
 //Imagens
 import simboloSoftware from "../assets/simboloSoftware.png";
@@ -180,6 +181,8 @@ export default function Software() {
           Essa integração entre hardware e software permite que os dados sejam monitorados em tempo real através de um cliente MQTT instalado em um celular ou computador. O código foi amplamente comentado para facilitar a compreensão de cada etapa, destacando a lógica de funcionamento, as conexões de rede e o controle dos componentes. Assim, a seção de software demonstra a importância da programação no contexto da IoT, unindo sensores, conectividade e automação em um único sistema inteligente.
         </p>
       </article>
+
+      <Footer />
     </>
   );
 }
