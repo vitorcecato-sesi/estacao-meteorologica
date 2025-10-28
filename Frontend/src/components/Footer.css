@@ -19,7 +19,6 @@
     font-size: 16px;
 }
 
-
 .direitosAutorais {
     padding-top: 4em;
     display: flex;
@@ -42,4 +41,139 @@
     flex-direction: row;
     display: flex;
     gap: 67.9em;
+}
+
+/* Responsividade para telas grandes (até 1200px) */
+@media (max-width: 1200px) {
+  .footerProjeto {
+    margin-right: 4em;
+    margin-left: 4em;
+  }
+
+  .linksContainer {
+    padding-top: 2em;
+    gap: 8em; /* Reduz gap */
+  }
+
+  .footerLink {
+    font-size: 15px; /* Reduz fonte */
+    padding-right: 1.5em;
+  }
+
+  .direitosAutorais {
+    padding-top: 3.5em;
+  }
+
+  .logoFooter {
+    width: 5.5em; /* Reduz logo */
+  }
+
+  .textoDireitos {
+    font-size: 13px;
+    margin-left: 1.5em;
+    gap: 50em; /* Ajusta gap */
+  }
+}
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .footerProjeto {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
+
+  .linksContainer {
+    padding-top: 1.5em;
+    gap: 6em;
+  }
+
+  .footerLink {
+    font-size: 14px;
+    padding-right: 1em;
+  }
+
+  .direitosAutorais {
+    padding-top: 3em;
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center;
+    gap: 1em; /* Adiciona gap entre logo e texto */
+  }
+
+  .logoFooter {
+    width: 5em;
+  }
+
+  .textoDireitos {
+    font-size: 12px;
+    margin-left: 0; /* Remove margem esquerda */
+    flex-direction: column; /* Empilha textos */
+    gap: 0.5em;
+    text-align: center; /* Centraliza texto */
+  }
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .footerProjeto {
+    margin-right: 2em;
+    margin-left: 2em;
+    margin-top: 2em;
+  }
+
+  .linksContainer {
+    padding-top: 1em;
+    gap: 4em;
+  }
+
+  .footerLink {
+    font-size: 13px;
+    padding-right: 0.5em;
+  }
+
+  .direitosAutorais {
+    padding-top: 2em;
+    gap: 0.8em;
+  }
+
+  .logoFooter {
+    width: 4.5em;
+  }
+
+  .textoDireitos {
+    font-size: 11px;
+    gap: 0.3em;
+  }
+}
+
+/* Responsividade para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  .footerProjeto {
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-top: 1.5em;
+  }
+
+  .linksContainer {
+    padding-top: 0.5em;
+    gap: 2em;
+  }
+
+  .footerLink {
+    font-size: 12px;
+    padding-right: 0.3em;
+  }
+
+  .direitosAutorais {
+    padding-top: 1.5em;
+    gap: 0.5em;
+  }
+
+  .logoFooter {
+    width: 4em;
+  }
+
+  .textoDireitos {
+    font-size: 10px;
+    gap: 0.2em;
+  }
 }

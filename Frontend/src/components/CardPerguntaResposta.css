@@ -109,3 +109,87 @@
   outline: 3px solid rgba(167, 212, 147, 0.18);
   outline-offset: 6px;
 }
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .cardPerguntaResposta {
+    width: 18em; /* Reduz largura */
+    height: 22em; /* Reduz altura */
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 1.5em; /* Reduz padding interno */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 2em; /* Reduz fonte da pergunta */
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 4em; /* Reduz fonte do número */
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 1.1em; /* Reduz fonte do hint */
+  }
+
+  .respostaTexto {
+    font-size: 1.3em; /* Reduz fonte da resposta */
+  }
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .cardPerguntaResposta {
+    width: 16em; /* Reduz ainda mais */
+    height: 20em;
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 1em; /* Reduz padding */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 1.8em;
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 3.5em;
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 1em;
+  }
+
+  .respostaTexto {
+    font-size: 1.2em;
+  }
+}
+
+/* Responsividade para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  .cardPerguntaResposta {
+    width: 14em; /* Ajuste para caber em telas pequenas */
+    height: 18em;
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 0.8em; /* Padding mínimo */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 1.5em;
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 3em;
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 0.9em;
+  }
+
+  .respostaTexto {
+    font-size: 1.1em;
+  }
+}

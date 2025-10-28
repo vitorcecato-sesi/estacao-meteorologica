@@ -8,11 +8,20 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <header className="navbar">
-
       {/* Texto-título */}
       <section className="logoTexto">
         Grupo 3
       </section>
+
+      {/* Input checkbox para controlar o menu hambúrguer */}
+      <input type="checkbox" id="menu-toggle" style={{ display: 'none' }} />
+
+      {/* Label do hambúrguer */}
+      <label htmlFor="menu-toggle" className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
       {/* Links de navegação */}
       <nav className="navlinks">
