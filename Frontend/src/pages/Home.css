@@ -37,8 +37,9 @@
     height: auto;
     border-radius: 12px;
     box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3);
-    transform: translateY(-84.8px);
+    transform: translateY(-107px);
     overflow: hidden;
+    position: relative;
 }
 
 /* ------------------------------------------------------ */
@@ -215,8 +216,9 @@
     font-weight: 400;
     writing-mode: vertical-rl;
     transform: rotate(360deg);
+    padding: 1em;
     color: #6F6F6F;
-    max-width: 1em;
+    max-width: 0px;
 }
 
 /* Imagem Integração Multidisciplinar */

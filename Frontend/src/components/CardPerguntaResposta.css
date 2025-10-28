@@ -1,93 +1,111 @@
-/* ...existing code... */
+/* Formatação dos Cards / Padronização */
 .cardPerguntaResposta {
-  width: 320px;
-  height: 380px;
-  background: #485C11;
-  border-radius: 12px;
-  position: relative;
-  margin: 1em;
+  width: 20em;
+  height: 25em;
+  border-radius: 10px;
   cursor: pointer;
-  box-shadow: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  transition: box-shadow 0.2s;
   font-family: 'Crimson Text', serif;
+  position: relative;
+  transform-style: preserve-3d; /* habilita efeito 3D */
+  transition: transform 1s cubic-bezier(.4,0,.2,1); /* animação suave */
 }
 
+/* faces (frente/verso) ocupam o mesmo espaço e são posicionadas */
 .cardPerguntaResposta .cardFace {
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
   position: absolute;
-  top: 0; left: 0;
-  backface-visibility: hidden;
+  inset: 0;                      /* top/right/bottom/left = 0 */
+  backface-visibility: hidden; /* esconde face traseira quando virado */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 2em 1.5em 1.5em 1.5em;
-  font-family: 'Crimson Text', serif;
-  background: transparent;
-  color: #fff;
+  padding: 2em;
+  color: white;
+  border-radius: 12px;
+  transition: opacity .5s ease, transform .5s ease; /* suaviza mudanças */
 }
 
+/* frente fica por cima inicialmente */
 .cardPerguntaResposta .cardFrente {
   z-index: 2;
 }
 
-.cardPerguntaResposta .perguntaTexto {
-  font-size: 2.7em;
-  font-family: 'Crimson Text', serif;
-  font-weight: 400;
-  line-height: 1.05;
-  margin-bottom: auto;
-  margin-top: 0.2em;
+/* verso rotacionado 180deg (escondido até flip) */
+.cardPerguntaResposta .cardVerso {
+  transform: rotateY(180deg);
+  z-index: 1;
+  overflow: auto;
 }
 
+/* estado virado: vira o cartão */
+.cardPerguntaResposta.virado {
+  transform: rotateY(180deg);
+}
+
+.cardPerguntaResposta .perguntaTexto {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+/* numero e hint mantêm posições absolutas */
 .cardPerguntaResposta .cardNumero {
   position: absolute;
-  bottom: 0.5em;
-  right: 0.7em;
-  font-size: 3.5em;
-  opacity: 1;
+  bottom: 0em;
+  right: 0.3em;
+  font-size: 5em;
   font-family: 'Crimson Text', serif;
-  color: #fff;
+  color: white;
+  z-index: 3;
 }
 
 .cardPerguntaResposta .cardHint {
   position: absolute;
-  bottom: 0.7em;
-  left: 1em;
-  right: 0;
-  font-size: 1.2em;
-  opacity: 0.7;
-  font-family: 'Crimson Text', serif;
-  color: #d6d6d6;
-  text-align: left;
-}
-
-.cardPerguntaResposta .cardVerso {
-  transform: rotateY(180deg);
-  background: #fff !important;
-  color: #485C11;
+  bottom: 1em;
+  left: 1.5em;
   font-size: 1.3em;
+  color: white;
+  opacity: 70%;
+  z-index: 3;
+}
+
+/* estilizando e permitindo "mover" a resposta com transform */
+.respostaTexto {
   font-family: 'DM Sans', Arial, sans-serif;
-  text-align: left;
-  padding-top: 2.5em;
+  font-size: 1.5em;
+  line-height: 1.6;
+  color: white;
+  margin-top: 0.2em;
+  max-height: 100%;
+  overflow: auto;
+  opacity: 0;
+  transform: translateY(16px);    /* valor inicial: ajuste para "mover" */
+  transition: transform .45s ease, opacity .45s ease;
 }
 
-.cardPerguntaResposta.virado {
-  box-shadow: none;
+/* quando virado, mostra a resposta e anima para posição */
+.cardPerguntaResposta.virado .respostaTexto {
+  opacity: 1;
+  transform: translateY(0);       /* posição final: trocar aqui para mudar o movimento */
 }
 
-.cardPerguntaResposta {
-  transform-style: preserve-3d;
-  transition: transform 0.6s cubic-bezier(.4,2,.3,1);
+/* destaque visual ao passar o mouse ou focar com teclado */
+.cardPerguntaResposta:hover,
+.cardPerguntaResposta:focus-visible {
+  transform: scale(1.04) translateY(-10px);
+  box-shadow: 0 30px 50px rgba(15, 23, 42, 0.18), 0 8px 22px rgba(15, 23, 42, 0.08);
+  z-index: 30; /* garante que fique acima dos outros */
+  opacity: 1;
 }
 
-.cardPerguntaResposta.virado {
-  transform: rotateY(180deg);
+/* se o cartão já estiver virado, manter o destaque similar */
+.cardPerguntaResposta.virado:hover,
+.cardPerguntaResposta.virado:focus-visible {
+  transform: rotateY(180deg) scale(1.04) translateY(-10px);
 }
-/* ...existing code... */x
+
+/* acessibilidade: outline suave no foco por teclado */
+.cardPerguntaResposta:focus-visible {
+  outline: 3px solid rgba(167, 212, 147, 0.18);
+  outline-offset: 6px;
+}
