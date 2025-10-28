@@ -278,10 +278,14 @@
         font-size: 50px; /* Leve redução para caber */
     }
     .containerTextosObjetivo {
-        gap: 1.5em; /* Gap menor */
+        gap: 4em; /* Gap menor */
+        flex-direction: column;
     }
     .caixaDeTextoObjetivo {
-        max-width: 40%; /* Ajuste para 2 colunas */
+        max-width: 90%; /* Ajuste para 2 colunas */
+    }
+    .tituloIntegracaoMulti {
+        margin-top: -1em;
     }
     .imagensProjeto {
         gap: 5em; /* Gap menor */
@@ -314,28 +318,31 @@
     .tituloObjetivo {
         font-size: 40px; /* Menor */
     }
-    
-    .tituloIntegracaoMulti {
-        font-size: 40px; /* Menor */
-    }
     .containerTextosObjetivo {
         flex-direction: column; /* Empilha para evitar overflow */
-        gap: 1em;
+        gap: 3.5em;
     }
     .caixaDeTextoObjetivo {
         max-width: 90%; /* Largura total */
     }
+    .tituloIntegracaoMulti {
+        font-size: 40px; /* Menor */
+        margin-top: -0.8em;
+    }
+    .subtituloObjetivo {
+        margin-top: 8em;
+    }
     .imagensProjeto {
         flex-direction: column; /* Empilha imagens */
         gap: 2em;
+        padding-left: 10em;
     }
     .imagemProjeto {
-        width: 90%; /* Largura total */
+        width: 60%; /* Largura total */
         border-radius: 50px; /* Menos arredondado */
     }
     .linhaImagem1, .linhaImagem2 {
         gap: 2em;
-        padding-top: 5em;
     }
     /* Remoções */
     .cardImagemContainer {
