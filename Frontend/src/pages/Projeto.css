@@ -1,0 +1,172 @@
+.tituloProjeto {
+   border-left: solid 0.5vw #767676;
+   padding-left: 1vw; 
+   font-size: 4vw;
+   margin-left: 3vw;
+   font-family: "Crimson Text", serif;
+}
+
+.descricaoProjeto {
+   padding-left: 4vw;
+   padding-right: 2vw;
+   font-size: 1.2vw;
+   text-align: justify;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   font-family: "DM Sans", sans-serif;
+}
+
+.descricaoProjeto p {
+   width: 40vw;
+   font-family: "DM Sans", sans-serif;
+}
+
+
+.descricaoProjeto img {
+   width: 22vw;
+   margin-left: 2vw;
+   margin-right: 2vw;
+}
+
+.divisaoProjeto {
+   width: 97%;
+}
+
+.detalhesProjeto {
+   padding-left: 10vw;
+   padding-right: 10vw;
+   font-size: 1.2vw;
+   text-align: justify;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 5vw;
+   margin-bottom: 5vw;
+}
+
+.detalhesProjeto hr {
+   border: solid 0.1vw #a4c09f;
+}
+
+.problemaProjeto {
+   width: 35vw;
+   font-family: "DM Sans", sans-serif;
+}
+
+.problemaProjeto h2 {
+   font-size: 2.8vw;
+   color: #4A7023;
+   font-family: "Crimson Text", serif;
+}
+
+.solucaoProjeto {
+   width: 35vw;
+   font-family: "DM Sans", sans-serif;
+}
+
+.solucaoProjeto h2 {
+   font-size: 2.8vw;
+   color: #4A7023;
+   font-family: "Crimson Text", serif;
+}
+
+.diagramaProjeto {
+   text-align: center;
+   background-color: #8E9C78;
+   
+}
+
+.diagramaProjeto h1 {
+   font-size: 3.8vw;
+   padding-top: 3vw;
+   font-family: "Crimson Text", serif;
+   color: white;
+}
+
+.diagramaProjeto img {
+   width: 60vw;
+   padding-top: 2vw;
+   padding-bottom: 3vw;
+}
+
+@media screen and (max-width: 1024px) {
+   .tituloProjeto {
+       font-size: 6vw;
+   }
+   
+   .descricaoProjeto {
+
+       align-items: center;
+   }
+
+   .descricaoProjeto p {
+      width: 40vw;
+      font-size: 2vw;
+       margin-bottom: 3vw;
+   }
+
+   .descricaoProjeto img {
+       width: 35vw;
+   }
+
+   .detalhesProjeto {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .problemaProjeto, .solucaoProjeto {
+       width: 70vw;
+       font-size: 2vw;
+       margin-bottom: 3vw;
+   }
+
+   .problemaProjeto h2, .solucaoProjeto h2 {
+       font-size: 4vw;
+   }
+
+   .diagramaProjeto img {
+       width: 70vw;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .tituloProjeto {
+       font-size: 6vw;
+   }
+   
+   .descricaoProjeto {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .descricaoProjeto p {
+       width: 80vw;
+       font-size: 2vw;
+       margin-bottom: 5vw;
+   }
+
+   .descricaoProjeto img {
+       width: 40vw;
+
+   }
+
+   .detalhesProjeto {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .problemaProjeto, .solucaoProjeto {
+       width: 80vw;
+       font-size: 2vw;
+       margin-bottom: 3vw;
+   }
+
+   .problemaProjeto h2, .solucaoProjeto h2 {
+       font-size: 4vw;
+   }
+
+   .diagramaProjeto img {
+       width: 80vw;
+   }
+}

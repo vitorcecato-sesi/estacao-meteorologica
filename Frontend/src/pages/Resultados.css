@@ -1,0 +1,113 @@
+.tituloResultados {
+   border-left: solid 0.5vw #767676;
+   padding-left: 1vw; 
+   font-size: 4vw;
+   margin-left: 3vw;
+   font-family: "Crimson Text", serif;
+}
+
+.divisaoResultados {
+   width: 97%;
+}
+
+.paragrafoResultados {
+   padding-left: 4vw;
+   padding-right: 4vw;
+   padding-bottom: 4vw;
+   font-size: 1.2vw;
+   text-align: justify;
+   margin-top: 2vw;
+   margin-bottom: 2vw;
+   font-family: "DM Sans", sans-serif;
+}
+
+.videoResultados {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2vw;
+   margin-bottom: 2vw;
+   padding-left: 3vw;
+   padding-right: 3vw;
+   padding-bottom: 3vw;
+   padding-top: 3vw;
+   border-radius: 0.5vw;
+   background-color: #8E9C78;
+}
+
+.videoResultados video {
+   border-radius: 1vw;
+   width: 50vw;
+   height: auto;
+   margin-bottom: 2vw;
+   box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3);
+}
+
+.videoResultados p {
+   font-size: 1.2vw;
+   color:white;
+   text-align: justify;
+   font-family: "DM Sans", sans-serif;
+}
+
+.galeriaResultados {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2vw;
+   margin-bottom: 5vw;
+}
+
+.galeriaResultados img {
+   width: 25vw;
+   border-radius: 0.3vw;
+}
+
+@media screen and (max-width: 1024px) {
+   .tituloResultados {
+       font-size: 5vw;
+   }  
+
+   .paragrafoResultados {
+       font-size: 2vw;
+       padding: 6vw;
+   }
+
+   .videoResultados video {
+       width: 50vw;
+   }
+
+   .videoResultados p {
+       font-size: 2vw;
+       padding: 6vw;
+   }
+
+   .galeriaResultados img {
+       width: 30vw;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .tituloResultados {
+       font-size: 5vw;
+   }  
+
+   .paragrafoResultados {
+       font-size: 2vw;
+       padding: 6vw;
+   }
+
+   .videoResultados video {
+       width: 80vw;
+   }
+
+   .videoResultados p {
+       font-size: 2vw;
+       padding: 6vw;
+   }
+
+   .galeriaResultados img {
+       width: 50vw;
+   }
+}
