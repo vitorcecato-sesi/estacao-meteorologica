@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
+//Css
 import "./Software.css";
+
+//Componentes
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer"
 
@@ -14,11 +17,12 @@ import fotoConfiguracaoInicial from "../assets/fotoConfiguracaoInicial.png"
 import fotoLoopSetup from "../assets/fotoLoopSetup.png"
 import fotoLeds from "../assets/fotoLeds.png"
 
+//Array tabs
 const tabs = [
   {
     id: "config",
     title: "Configuração Inicial",
-    img: fotoConfiguracaoInicial, // substitua pelo caminho real
+    img: fotoConfiguracaoInicial, 
     text: "O código-fonte, desenvolvido no formato .ino, foi estruturado para realizar de forma contínua a coleta e o envio das informações captadas pelos sensores. No início do programa, estão as definições dos pinos utilizados, variáveis e parâmetros de rede, como o nome da rede Wi-Fi (SSID), senha e o endereço do broker MQTT (Mosquitto).",
   },
   {
@@ -36,7 +40,7 @@ const tabs = [
 ];
 
 export default function Software() {
-  const [active, setActive] = useState(tabs[0].id); //armazena qual aba esta ativa
+  const [active, setActive] = useState(tabs[0].id); //Armazena qual aba esta ativa
 
   return (
     <>
@@ -133,7 +137,7 @@ export default function Software() {
               key={tab.id} // Chave única para React identificar cada botão no loop
               className={`softwareTab ${active === tab.id ? "active" : ""}`} // Classe condicional: 'active' se esta aba estiver selecionada, senão vazia
               onClick={() => setActive(tab.id)} // Ao clicar, define esta aba como ativa
-              role="tab" // Atributo ARIA: indica que é um elemento de aba para acessibilidade
+              role="tab" // Indica que o elemento <button> é uma aba em um sistema de navegação por abas.
               aria-selected={active === tab.id} // ARIA: true se selecionada, false se não; ajuda leitores de tela
             >
               {tab.title} {/* Texto do botão é o título da aba */}
@@ -152,7 +156,7 @@ export default function Software() {
         Cada painel é mostrado ou escondido baseado na aba ativa.
         */}
           {tabs.map((tab) => (
-            <article
+            <section
               key={tab.id} // Chave única para React
               className={`tabPanel ${active === tab.id ? "show" : "hide"}`} // Classe condicional: 'show' para exibir, 'hide' para esconder
               aria-hidden={active !== tab.id} // ARIA: true se escondido (não ativo), false se visível; para acessibilidade
@@ -165,13 +169,13 @@ export default function Software() {
                 <h3 className="tabTitle">{tab.title}</h3> {/* Título da aba */}
                 <p>{tab.text}</p> {/* Descrição ou conteúdo textual da aba */}
               </div>
-            </article>
+            </section>
           ))}
         </section>
       </section>
 
-      <article>
-        <Link to="/sobre" className="linkIDE"> Clique aqui para ver o codigo fonte completo e comentado! </Link>
+      <article className="blocoLink">
+        <Link to="https://docs.google.com/document/d/1MfR1_wCFhnLSo3Msfh44FSOm_dJTS9WctXU9xiZ8b6Q/edit?tab=t.0" className="linkIDE" target="blank"> Clique aqui para ver o codigo fonte completo e comentado! </Link>
       </article>
 
       <br/>

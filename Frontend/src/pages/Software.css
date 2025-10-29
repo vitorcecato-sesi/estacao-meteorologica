@@ -79,7 +79,6 @@
 
 .paragrafoBoardEPorta{
     background-color: #BCDAB1;
-    height: 37vh;
     width: 30vw;
     padding: 4em;
     border-radius: 5em;
@@ -144,7 +143,7 @@
 }
 
 /* painel visível */
-.tabPanel{
+.tabPanel.show{
     display: flex;
     align-items: center;
     background-color: #8E9C78;
@@ -153,7 +152,7 @@
     padding-right: 5em;
     gap: 10em;
     font-family: Crimson Text, serif;
-    font-size: 1.2em;
+    font-size: 1.2em;   
 }
 
 /* painel oculto */
@@ -167,16 +166,16 @@
 
 .linkIDE{
     background-color: #BCDAB1;
+    text-align: left;
     text-decoration: none;
     color: black;
     padding: 0.7em;
     border-radius: 10em;
     display: flex;
     justify-self: center;
-    width: 36vw;
     font-size: 1.3em;
-    text-align: center;
     font-family: Crimson Text, serif;
+    text-align: center;
 }
 
 .ultimoParagrafo{
@@ -212,22 +211,6 @@
 }
 
 @media (max-width: 950px) {
-    .paragrafoBoardEPorta{
-        width: 35vw;
-    }
-
-    .tabPanel{
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .tabImage{
-        width: 60vw;
-    }
-}
-
-@media (max-width: 870px) {
     .blocoArduinoIDE{
         height: 58vh;
     }
@@ -250,6 +233,15 @@
     .textoConfiguracoes{
         width: 75vw;
     }
+
+    .tabPanel{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tabImage{
+        width: 55vw;
+    }
 }
 
 @media (max-width: 701px) {
@@ -261,6 +253,10 @@
     .paragrafoArduinoIDE{
         width: 90vw;
     }
+
+    .tabImage{
+        width: 64vw;
+    }
 }
 
 @media (max-width: 669px) {
@@ -271,6 +267,15 @@
 
     .softwareTab{
         padding: 1em;
+    }
+
+    .fotoBoardEPorta{
+        height: 40vh;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 45vw;
+        padding-bottom: 8em;
     }
 }
 
@@ -291,9 +296,11 @@
     .blocoArduinoIDE{
         height: 95vh;
     }
-}
 
-@media (max-width: 543px) {
+    .fotoConfiguracoes{
+        height: 15vh;
+    }
+
     .paragrafoBoardEPorta{
         height: 40vh;
     }
@@ -318,43 +325,25 @@
     }
 
     .paragrafoBoardEPorta{
-        width: 60vw;
+        width: 55vw;
+        height: 40vh;
     }
 
     .tabImage{
-        width: 63vw;
-    }
-}
-
-@media (max-width: 494px) {
-    .paragrafoBoardEPorta{
-        height: 55vh;
+       
     }
 }
 
 @media (max-width: 438px) {
     .fotoConfiguracoes{
-        height: 20vh;
-    }
-
-    .fotoBoardEPorta{
-        height: 50vh;
-    }
-}
-
-@media (max-width: 438px) {
-    .tabPanel{
-        width: 62vw;
-
-    }
-}
-
-@media (max-width: 438px) {
-    .fotoConfiguracoes{
-        height: 12vh;
+        height: 10=3vh;
     }
 
     .fotoBoardEPorta{
         height: 30vh;
+    }
+    
+    .tituloPartesCodigo{
+        font-size: 1.5em;
     }
 }
