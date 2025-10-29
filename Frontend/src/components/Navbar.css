@@ -1,0 +1,190 @@
+/* Padronizando as cores para facilitar o uso */
+:root {
+  --background: #485C11;
+  --selecionado: black;
+  --naoSelecionado: gray;
+}
+
+/* Container total da NAVBAR, onde agrupa todas as outras sections */
+.navbar {
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; /* Para posicionar o menu dropdown */
+}
+
+/* Section do texto "Grupo 3" */
+.logoTexto {
+  font-size: 30px;
+  font-family: Dm Sans, sans-serif;
+  display: flex;
+  align-items: center;
+  letter-spacing: -2px;
+  margin-left: 2em;
+}
+
+/* Section do menu das páginas (links) */
+.navlinks {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+  font-family: dm sans, sans-serif;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Animação suave */
+}
+
+/* Cada página (link) */
+.navlinks a {
+  text-decoration: none;
+  color: var(--naoSelecionado);
+  padding: 8px 6px;
+  position: relative;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Animação suave para cor */
+}
+
+/* A página (link) que estiver selecionado, muda a cor do texto para preto, e deixa as outras em cinza */
+.navlinks a.active,
+.navlinks a[aria-current="page"] {
+  color: var(--selecionado);
+}
+
+/* Definições para a página selecionada (deixa a barra verde em baixo do texto) */
+.navlinks a.active::after,
+.navlinks a[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--background);
+  border-radius: 4px;
+  bottom: -3px;
+}
+
+/* Botão GitHub que leva ao repositório do projeto */
+.botaoGitHub {
+  background: var(--background);
+  color: white;
+  padding: 14px 23px;
+  border-radius: 100px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-family: DM sans, sans-serif;
+  margin-right: 3em;
+  transition: background 0.3s ease; /* Animação suave */
+}
+
+/* Estilos para o botão hambúrguer */
+.hamburger {
+  display: none; /* Escondido por padrão */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px; /* Reduzido de 10px para minimizar espaço */
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin: 0; /* Removido qualquer margem padrão */
+}
+
+.hamburger:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--selecionado);
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* Animação do hambúrguer quando ativo */
+#menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Responsividade: menu hambúrguer aparece abaixo de 1100px */
+@media (max-width: 1350px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 0.5em 1em;
+  }
+
+  .logoTexto {
+    font-size: 30px;
+    margin-left: 1em;
+    flex: 1;
+  }
+
+  .navlinks {
+    display: none; /* Esconde os links por padrão */
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1000;
+    align-items: center;
+  }
+
+  /* Mostra o menu quando o checkbox está marcado */
+  #menu-toggle:checked ~ .navlinks {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex; /* Mostra o hambúrguer */
+    order: 2;
+    margin-right: 1em;
+    padding: 5px; /* Mantido reduzido */
+  }
+
+  .botaoGitHub {
+    padding: 10px 18px;
+    font-size: 14px;
+    margin-right: 1em;
+    order: 3;
+  }
+}
+
+/* Responsividade adicional para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .logoTexto {
+    font-size: 30px;
+    margin-left: 0.5em;
+  }
+
+  .navlinks {
+    padding: 0.5em;
+    gap: 0.5em;
+  }
+
+  .hamburger {
+    margin-right: 1em;
+    padding: 5px;
+  }
+
+  .botaoGitHub {
+    padding: 8px 16px;
+    font-size: 12px;
+    margin-right: 0.5em;
+  }
+}
