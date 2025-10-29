@@ -14,7 +14,7 @@ import Footer from "../components/Footer"
 function Resultados() {
 return (
 <>
-<Navbar/>
+
 <h1 className="tituloResultados">Resultados</h1>
 <p className="paragrafoResultados">Durante o processo de construção do protótipo, foi possível compreender de forma prática como ocorre a leitura de sensores ambientais e a transmissão de dados em tempo real através do protocolo MQTT, utilizando o servidor Mosquitto. O projeto proporcionou uma visão completa do funcionamento de um sistema IoT, desde a coleta das informações de temperatura, umidade e qualidade do ar, até o envio e visualização dos dados em um cliente MQTT instalado no celular. Além disso, a experiência contribuiu para o aprimoramento dos conhecimentos em eletrônica aplicada, lógica de programação, configuração de redes sem fio e análise de dados ambientais.</p>
 <hr className="divisaoResultados"/>
@@ -34,7 +34,7 @@ return (
     <img src={projeto6}></img>
     <img src={projeto7}></img>
 </section>
-<Footer/>
+
 </>
 )
 }
