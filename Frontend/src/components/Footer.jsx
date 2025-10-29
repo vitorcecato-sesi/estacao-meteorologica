@@ -7,16 +7,16 @@ export default function Footer() {
       <section className="linksContainer">
         <nav className="links">
           <Link to="/" className="footerLink">
-            {" "}
-            O Projeto{" "}
+            O Projeto
           </Link>
           <Link to="/hardware" className="footerLink">
-            {" "}
-            Hardware{" "}
+            Hardware
+          </Link>
+          <Link to="/perguntasRespostas" className="footerLink">
+            Perguntas e Respostas
           </Link>
           <Link to="/equipe" className="footerLink">
-            {" "}
-            Equipe{" "}
+            Equipe
           </Link>
         </nav>
       </section>
