@@ -20,17 +20,19 @@ import "./Equipe.css";
 // Importa componentes reutilizáveis (menu e rodapé)
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 // Declara o componente principal da página "Equipe"
 export default function Equipe() {
   return (
     <>
       {/* Navbar é o menu fixo que aparece no topo da página */}
       <Navbar />
+
       {/* Cabeçalho da página Equipe */}
       <section className="headerPaginaEquipe">
         <h1 className="enfeiteEquipe"> | </h1> {/* Barra decorativa */}
         <h1 className="tituloEquipe"> Equipe </h1> {/* Título principal */}
-        <img className="simboloEquipe" src={Img} alt="Simbolo Equipe" />{" "}
+        <img className="simboloEquipe" src={Img} alt="Simbolo Equipe" />
         {/* Ícone decorativo */}
       </section>
 
@@ -45,6 +47,7 @@ export default function Equipe() {
                 alt="Logo do grupo abacate"
                 className="ImgEquipe"
               />
+
               {/* Texto descritivo sobre quem é o grupo */}
               <section className="blequipe-texto">
                 <h2 className="Titulo-Equipe">Quem Somos Nós?</h2>
@@ -78,6 +81,7 @@ export default function Equipe() {
             <div className="integrante">
               <div className="hover-card">
                 <img src={Laura} alt="Laura Betti" className="IMGin" />
+
                 {/* Área que aparece quando passa o mouse */}
                 <div className="hover-info">
                   <div className="foto-hover"></div>
@@ -219,6 +223,7 @@ export default function Equipe() {
               como nossa equipe.
             </p>
           </section>
+
           {/* Imagem da logo do grupo */}
           <section>
             <img

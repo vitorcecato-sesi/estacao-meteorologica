@@ -3,33 +3,47 @@
 =========================================== */
 .headerPaginaEquipe {
   display: flex;
+  /* Usa flexbox para organizar os itens em linha */
   flex-direction: row;
+  /* Alinha os elementos horizontalmente */
   align-items: center;
+  /* Centraliza verticalmente */
   gap: 2em;
+  /* Espaço entre os itens */
   margin-left: 6rem;
+  /* Desloca o cabeçalho para a direita */
   margin-top: -4rem;
+  /* Sobe o cabeçalho um pouco */
 }
 
 /* Ícone do cabeçalho com rotação animada */
 .simboloEquipe {
   height: 12vh;
+  /* Altura proporcional à tela */
   transition: transform 0.5s ease-in-out;
+  /* Suaviza o giro */
 }
 
 .simboloEquipe:hover {
   transform: rotateY(180deg);
+  /* Gira o ícone ao passar o mouse */
 }
 
 /* Elementos de texto do título principal */
 .enfeiteEquipe {
   font-size: 6em;
+  /* Tamanho grande para destaque */
   color: rgb(75, 75, 75);
+  /* Cinza escuro */
 }
 
 .tituloEquipe {
   font-size: 6em;
+  /* Mesmo tamanho do enfeite */
   font-family: "Crimson Text", serif;
+  /* Fonte serifada elegante */
   font-weight: 600;
+  /* Negrito médio */
 }
 
 /* ===========================================
@@ -37,45 +51,70 @@
 =========================================== */
 .equipe-img-texto {
   display: flex;
+  /* Alinha imagem e texto lado a lado */
   align-items: center;
+  /* Centraliza verticalmente */
   background-color: #596f1c;
+  /* Fundo verde-oliva */
   padding: 3rem;
+  /* Espaçamento interno */
   border-radius: 2rem;
+  /* Bordas arredondadas */
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  /* Sombra para destaque */
 }
 
 /* Imagem principal da equipe */
 .ImgEquipe {
   width: 25em;
+  /* Largura fixa */
   height: auto;
+  /* Mantém proporção */
   margin: 2rem 0 2rem 6rem;
+  /* Espaçamento externo */
   border-radius: 2rem;
+  /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  /* Sombra forte */
 }
 
-/* Título e texto de apresentação */
+/* Bloco de texto ao lado da imagem */
 .blequipe-texto {
   display: flex;
+  /* Coluna de texto */
   flex-direction: column;
   align-items: flex-start;
+  /* Alinhado à esquerda */
   margin-left: 3rem;
+  /* Espaçamento lateral */
 }
 
 .Titulo-Equipe {
   color: #37470b;
+  /* Verde escuro */
   margin-bottom: 4rem;
+  /* Espaço abaixo do título */
   background-color: #93b929;
+  /* Fundo verde claro */
   padding: 0.5rem 1rem;
+  /* Espaçamento interno */
   border-radius: 1rem;
+  /* Bordas arredondadas */
   font-size: 1.3rem;
+  /* Tamanho do título */
 }
 
 .Texto-Equipe {
   color: #ffffff;
+  /* Texto branco */
   font-size: 1.1rem;
+  /* Tamanho confortável de leitura */
   line-height: 1.6;
+  /* Espaçamento entre linhas */
   width: 55rem;
+  /* Largura do parágrafo */
   margin-top: -2rem;
+  /* Ajuste de posição */
 }
 
 /* ===========================================
@@ -83,121 +122,149 @@
 =========================================== */
 .Bloco-Integrantes {
   margin-top: 2rem;
+  /* Espaçamento acima */
 }
 
 .Titulo-In {
   margin-left: 5rem;
+  /* Afasta da borda */
   margin-top: 3rem;
   margin-bottom: 5.5rem;
   font-family: "DM Sans", sans-serif;
+  /* Fonte moderna */
   font-size: 20px;
+  /* Tamanho do subtítulo */
 }
 
 /* Container geral dos integrantes */
 .equipe-container {
   display: flex;
+  /* Exibe os integrantes em linha */
   flex-wrap: wrap;
+  /* Permite quebrar linha se precisar */
   justify-content: center;
+  /* Centraliza horizontalmente */
   gap: 15rem;
+  /* Espaço entre os cards */
   margin: 20px 0 6rem 0;
+  /* Margens verticais */
 }
 
-/* Cada integrante em formato de coluna */
+/* Cada integrante (coluna com imagem e nome) */
 .integrante {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* para posicionar o nome */
+  /* Necessário para o texto sobreposto */
   transition: all 0.4s ease;
+  /* Transição suave */
 }
 
 /* Nome abaixo da foto */
 .Nome {
   background-color: #93b929;
+  /* Fundo verde claro */
   border-radius: 0.5rem;
+  /* Bordas arredondadas */
   font-weight: 700;
+  /* Negrito */
   font-size: 1.1rem;
+  /* Tamanho da fonte */
   margin-top: 0.3rem;
+  /* Espaço acima */
   width: 10rem;
+  /* Largura fixa */
   text-align: center;
+  /* Centraliza texto */
   padding: 0.2rem 0;
+  /* Espaçamento interno */
 }
-
 
 /* ===========================================
    NOVO DESIGN DOS CARDS DE INTEGRANTES
 =========================================== */
 .hover-card {
   position: relative;
-  /* para posicionar o texto interno */
+  /* Para posicionar o texto dentro */
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #d5f5b4;
+  /* Fundo verde claro */
   border: 2px solid #255a27;
+  /* Borda verde escura */
   border-radius: 50%;
+  /* Começa redondo */
   width: 10em;
   height: 12em;
   overflow: hidden;
-  /* esconde o conteúdo que ultrapassa os limites */
+  /* Esconde conteúdo extra */
   transition: all 0.5s ease;
+  /* Transição suave */
   cursor: pointer;
+  /* Mostra que é interativo */
 }
 
-/* Imagem principal (perfil redondo) */
+/* Imagem do integrante dentro do card */
 .hover-card img {
   width: 100%;
+  /* Preenche o espaço */
   height: 100%;
   border-radius: 50%;
+  /* Redondo */
   object-fit: cover;
-  /* garante que a imagem preencha o espaço */
+  /* Ajusta proporção */
   transition: all 0.5s ease;
 }
 
-/* Animação ao passar o mouse — o card se expande */
+/* Efeito ao passar o mouse (expande o card) */
 .hover-card:hover {
   width: 25rem;
-  /* cresce lateralmente */
+  /* Aumenta lateralmente */
   border-radius: 2rem;
+  /* Fica mais retangular */
   justify-content: flex-start;
-  /* alinha à esquerda */
+  /* Alinha à esquerda */
   padding-left: 1rem;
   padding: 1rem;
 }
 
-/* Ajusta a imagem ao expandir o card */
+/* Ajusta imagem durante a expansão */
 .hover-card:hover img {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
   margin-right: 1.2rem;
+  /* Espaço para o texto */
   background-color: #3eac42;
+  /* Cor de destaque */
   padding: 0.2rem;
 }
 
-/* Texto que aparece na expansão */
+/* Texto escondido que aparece no hover */
 .hover-info {
   opacity: 0;
+  /* Invisível inicialmente */
   position: absolute;
   left: 8rem;
+  /* Posição inicial */
   color: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
   transition: all 0.5s ease;
-  /* transição suave */
 }
 
-/* Mostra o texto com leve deslocamento */
+/* Mostra o texto ao passar o mouse */
 .hover-card:hover .hover-info {
   opacity: 1;
-  /* torna visível */
+  /* Fica visível */
   left: 9rem;
-  /* desloca um pouco para a direita */
+  /* Leve deslocamento */
 }
 
-/* Estilo do título “Funções” dentro do card */
+/* Título dentro do card expandido */
 .nome-hover {
   font-weight: 700;
   font-size: 1.1rem;
@@ -217,27 +284,35 @@
   align-items: center;
 }
 
+/* Bloco amarelo com texto da explicação */
 .blequipe-textologo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: #fff69d;
+  /* Fundo amarelo claro */
   padding: 1rem 2rem;
   border-radius: 0 50px 50px 0;
+  /* Borda arredondada só de um lado */
   width: 75rem;
   margin-right: 6rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  /* Sombra */
 }
 
+/* Título da explicação */
 .Titulo-Logo {
   color: #fff69d;
+  /* Texto amarelo claro */
   background-color: #b5aa47;
+  /* Fundo dourado */
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   margin: 0 0 1rem 23rem;
   /* Centraliza o título */
 }
 
+/* Logo circular ao lado do texto */
 .Img-Logo {
   width: 13em;
   height: auto;
@@ -246,44 +321,46 @@
   border-radius: 50%;
 }
 
+/* Texto explicativo da logo */
 .texto-expli {
   font-size: 1.1rem;
   line-height: 1.6;
   /* Espaçamento entre linhas */
 }
 
-/* ===========================================*/
-
+/* ===========================================
+   RESPONSIVIDADE — AJUSTES PARA TELAS MENORES
+=========================================== */
 
 @media (max-width: 1460px) {
   .Texto-Equipe {
     width: 35rem;
   }
 
+  /* Reduz largura do texto */
   .Titulo-Logo {
     margin: 0 0 1rem 15rem;
-    /* Centraliza o título */
   }
 
   .equipe-container {
     gap: 15rem;
-    margin: 20px 0 6rem 0;
   }
-
 }
 
 @media (max-width: 1242px) {
   .equipe-container {
     gap: 12rem;
   }
+
+  /* Menos espaço entre cards */
 }
 
 @media (max-width: 1155px) {
   .ImgEquipe {
     width: 30em;
-    height: auto;
   }
 
+  /* Reduz imagem */
   .Texto-Equipe {
     width: 25rem;
   }
@@ -302,13 +379,10 @@
 
   .Titulo-Logo {
     margin: 0 0 1rem 10rem;
-    /* Centraliza o título */
   }
-
 }
 
 @media (max-width: 1028px) {
-
   .Texto-Equipe {
     width: 20rem;
   }
@@ -320,18 +394,16 @@
   .equipe-container {
     gap: 6rem;
   }
-
-
 }
 
 @media (max-width: 955px) {
-
   .Texto-Equipe {
     width: 48rem;
   }
 
   .equipe-img-texto {
     flex-direction: column-reverse;
+    /* Imagem abaixo do texto */
     align-items: center;
   }
 
@@ -344,26 +416,16 @@
   }
 
   .ImgEquipe {
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0;
     width: 35em;
   }
 
   .Titulo-Logo {
     margin-left: 5rem;
   }
-
 }
-
-@media (max-width: 765px) {
-  .texto-hover {
-    font-size: 1.2rem;
-  }
-}
-
-
 
 @media (max-width: 820px) {
-
   .Titulo-Equipe {
     margin-left: 10rem;
   }
@@ -383,29 +445,22 @@
 
   .equipe-container {
     flex-direction: column;
+    /* Empilha cards */
     align-items: center;
   }
 
   .hover-card:hover {
     width: 30rem;
-    /* cresce lateralmente */
     height: 15rem;
-
   }
-
 
   .hover-card:hover img {
     width: 10rem;
     height: 10rem;
-    border-radius: 50%;
-    margin-right: 1.2rem;
-    background-color: #3eac42;
-    padding: 0.2rem;
   }
 
   .texto-hover {
     margin-left: 3rem;
-
   }
 
   .Titulo-Logo {
@@ -413,20 +468,14 @@
   }
 }
 
-
 @media (max-width: 429px) {
-
-
-
   .ImgEquipe {
     width: 20em;
   }
 
   .hover-card:hover {
     width: 20rem;
-    /* cresce lateralmente */
     height: 12rem;
-
   }
 }
 
@@ -441,7 +490,11 @@
   }
 
   .simboloEquipe {
-    height: 8vh;
+    height: 7vh;
+  }
+
+  .headerPaginaEquipe {
+    gap: 1rem;
   }
 
   .Titulo-Equipe {
@@ -464,7 +517,6 @@
   .blequipe-textologo {
     width: 20rem;
     border-radius: 2rem;
-    margin-left: 2rem;
     margin: 0;
   }
 
@@ -475,14 +527,11 @@
 
   .hover-card {
     width: 8rem;
-    /* cresce lateralmente */
     height: 8rem;
-
   }
 
   .hover-card:hover {
     width: 20rem;
-    /* cresce lateralmente */
     height: 12rem;
     padding: 2.5rem;
   }
@@ -507,11 +556,9 @@
     width: 8rem;
     font-size: 1rem;
     margin-left: 2rem;
-    
   }
 
   .funcao-hover {
     font-size: 0.9rem;
   }
-
 }
