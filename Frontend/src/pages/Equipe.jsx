@@ -18,15 +18,14 @@ import Vitor from "../assets/Img6R.png";
 import "./Equipe.css";
 
 // Importa componentes reutilizáveis (menu e rodapé)
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+
 
 // Declara o componente principal da página "Equipe"
 export default function Equipe() {
   return (
     <>
       {/* Navbar é o menu fixo que aparece no topo da página */}
-      <Navbar />
+      
 
       {/* Cabeçalho da página Equipe */}
       <section className="headerPaginaEquipe">
@@ -78,7 +77,7 @@ export default function Equipe() {
             {/* Cada integrante é um card com imagem + hover */}
             <div className="integrante">
               <div className="hover-card">
-                <img src={Laura} alt="Laura Betti" className="ImgIn" />
+                <img src={Laura} alt="Laura Betti" className="IMGin" />
                 {/* Área que aparece quando passa o mouse */}
                 <div className="hover-info">
                   <div className="foto-hover"></div>
@@ -94,7 +93,6 @@ export default function Equipe() {
                   </div>
                 </div>
               </div>
-              {/* Nome visível abaixo da imagem */}
               <p className="Nome">Laura Betti</p>
             </div>
 
@@ -232,7 +230,7 @@ export default function Equipe() {
       </article>
 
       {/* Rodapé com informações finais */}
-      <Footer />
+  
     </>
   );
 }
