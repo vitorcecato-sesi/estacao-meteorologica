@@ -6,7 +6,7 @@ import projeto4 from "../assets/projeto4.png";
 import projeto5 from "../assets/projeto5.png";
 import projeto6 from "../assets/projeto6.png";
 import projeto7 from "../assets/projeto7.png";
-import videoResultado from "../assets/projetoSensores.mp4";
+import videoResultado from "../assets/projetoSensores.MP4";
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
