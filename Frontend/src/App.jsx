@@ -7,6 +7,7 @@
 // Páginas
 import Home from './pages/Home'
 import PerguntasRespostas from './pages/PerguntasRespostas'
+import Equipe from './pages/Equipe'
 
 function App() {
 
@@ -15,6 +16,8 @@ function App() {
     <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} /> 
+          <Route path='/perguntas-respostas' element={<PerguntasRespostas/>} />
+          <Route path='/equipe' element={<Equipe/>} />
         </Routes>
       </BrowserRouter>
     </>
