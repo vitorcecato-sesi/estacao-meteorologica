@@ -37,7 +37,7 @@ export default function Footer() {
       <section className="direitosAutorais">
         {/* Imagem da logo do grupo */}
         <img
-          src="../../public/logoG3.png"
+          src="/logoG3.png"
           alt="logoFooter"
           className="logoFooter"
         />

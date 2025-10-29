@@ -2,6 +2,13 @@
 import Navbar from "../components/Navbar"; 
 import Footer from "../components/Footer";
 
+// Imagens robo
+import ft1robo from '../assets/ft1robo.png'
+import ft2robo from '../assets/ft2robo.png'
+import ft3robo from '../assets/ft3robo.png'
+import ft4robo from '../assets/ft4robo.png'
+
+
 // Estilização
 import "./Home.css";
 
@@ -265,13 +272,13 @@ export default function Home() {
             <section className="linhaImagem1">
               <img
                 className="imagemProjeto"
-                src="../../public/ft1robo.jpeg"
+                src={ft1robo}
                 alt="projeto1"
               />
 
               <img
                 className="imagemProjeto"
-                src="../../public/ft2robo.jpeg"
+                src={ft2robo}
                 alt="projeto2"
               />
             </section>
@@ -280,13 +287,13 @@ export default function Home() {
             <section className="linhaImagem2">
               <img
                 className="imagemProjeto"
-                src="../../public/ft3robo.jpeg"
+                src={ft3robo}
                 alt="projeto3"
               />
 
               <img
                 className="imagemProjeto"
-                src="../../public/ft4robo.jpeg"
+                src={ft4robo}
                 alt="projeto4"
               />
             </section>
