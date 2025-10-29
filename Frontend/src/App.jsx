@@ -1,16 +1,23 @@
+// Hooks
+  import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+// Estilização
+  import './App.css'
 
-import Wokwi from './pages/Wokwi.jsx';
-import './App.css'
+// Páginas
+import Home from './pages/Home'
+import PerguntasRespostas from './pages/PerguntasRespostas'
 
 function App() {
-  
 
   return (
     <>
-      <div>
-        <Wokwi />
-      </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>} /> 
+          <Route path='/perguntasRespostas' element={<PerguntasRespostas />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

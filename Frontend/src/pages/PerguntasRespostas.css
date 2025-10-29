@@ -1,0 +1,109 @@
+.tituloPagina {
+    padding-left: 6em;
+    padding-top: 0.5em;
+}
+
+.tituloPagina h1 {
+    display: inline-block;
+    font-family: "CImson Text", serif;
+    font-weight: 400;
+    font-size: 80px;
+    letter-spacing: -3px;
+    background: linear-gradient(to left, #485C11 8px, transparent 8px); /* linha à esquerda apenas */
+    background-repeat: no-repeat; 
+    background-position: left center; 
+    background-size: 7px 80%;
+    padding-left: 0.6em;
+}
+
+.gridPerguntasRespostas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4em 1em;    
+    justify-items: center;
+    align-items: start;
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+/* Responsividade para telas grandes (até 1200px) */
+@media (max-width: 1200px) {
+  .tituloPagina {
+    padding-left: 4em; /* Reduz padding lateral */
+  }
+
+  .tituloPagina h1 {
+    font-size: 70px; /* Reduz fonte do título */
+    background-size: 6px 80%; /* Ajusta linha */
+  }
+
+  .gridPerguntasRespostas {
+    grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
+    gap: 3em 1em; /* Reduz gap vertical */
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .tituloPagina {
+    padding-left: 3em;
+  }
+
+  .tituloPagina h1 {
+    font-size: 60px;
+    background-size: 5px 80%;
+  }
+
+  .gridPerguntasRespostas {
+    grid-template-columns: repeat(2, 1fr); /* Muda para 2 colunas */
+    gap: 2.5em 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .tituloPagina {
+    padding-left: 2em;
+    padding-top: 0.3em;
+  }
+
+  .tituloPagina h1 {
+    font-size: 50px;
+    letter-spacing: -2px;
+    background-size: 4px 80%;
+    padding-left: 0.5em;
+  }
+
+  .gridPerguntasRespostas {
+    grid-template-columns: repeat(2, 1fr); /* Mantém 2 colunas */
+    gap: 2em 0.5em; /* Reduz gaps */
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+/* Responsividade para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  .tituloPagina {
+    padding-left: 1em;
+    padding-top: 0.2em;
+  }
+
+  .tituloPagina h1 {
+    font-size: 40px; /* Fonte ainda menor */
+    letter-spacing: -1px;
+    background-size: 3px 80%;
+    padding-left: 0.4em;
+  }
+
+  .gridPerguntasRespostas {
+    grid-template-columns: 1fr; /* Uma coluna para móveis */
+    gap: 1.5em 0; /* Gap vertical reduzido */
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}

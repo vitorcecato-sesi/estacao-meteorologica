@@ -1,0 +1,195 @@
+/* Formatação dos Cards / Padronização */
+.cardPerguntaResposta {
+  width: 20em;
+  height: 25em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Crimson Text', serif;
+  position: relative;
+  transform-style: preserve-3d; /* habilita efeito 3D */
+  transition: transform 1s cubic-bezier(.4,0,.2,1); /* animação suave */
+}
+
+/* faces (frente/verso) ocupam o mesmo espaço e são posicionadas */
+.cardPerguntaResposta .cardFace {
+  position: absolute;
+  inset: 0;                      /* top/right/bottom/left = 0 */
+  backface-visibility: hidden; /* esconde face traseira quando virado */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2em;
+  color: white;
+  border-radius: 12px;
+  transition: opacity .5s ease, transform .5s ease; /* suaviza mudanças */
+}
+
+/* frente fica por cima inicialmente */
+.cardPerguntaResposta .cardFrente {
+  z-index: 2;
+}
+
+/* verso rotacionado 180deg (escondido até flip) */
+.cardPerguntaResposta .cardVerso {
+  transform: rotateY(180deg);
+  z-index: 1;
+  overflow: auto;
+}
+
+/* estado virado: vira o cartão */
+.cardPerguntaResposta.virado {
+  transform: rotateY(180deg);
+}
+
+.cardPerguntaResposta .perguntaTexto {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.4em;
+  line-height: 1.2;
+}
+
+/* numero e hint mantêm posições absolutas */
+.cardPerguntaResposta .cardNumero {
+  position: absolute;
+  bottom: 0em;
+  right: 0.3em;
+  font-size: 5em;
+  font-family: 'Crimson Text', serif;
+  color: white;
+  z-index: 3;
+}
+
+.cardPerguntaResposta .cardHint {
+  position: absolute;
+  bottom: 1em;
+  left: 1.5em;
+  font-size: 1.3em;
+  color: white;
+  opacity: 70%;
+  z-index: 3;
+}
+
+/* estilizando e permitindo "mover" a resposta com transform */
+.respostaTexto {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.6;
+  color: white;
+  margin-top: 0.2em;
+  max-height: 100%;
+  overflow: auto;
+  opacity: 0;
+  transform: translateY(16px);    /* valor inicial: ajuste para "mover" */
+  transition: transform .45s ease, opacity .45s ease;
+}
+
+/* quando virado, mostra a resposta e anima para posição */
+.cardPerguntaResposta.virado .respostaTexto {
+  opacity: 1;
+  transform: translateY(0);       /* posição final: trocar aqui para mudar o movimento */
+}
+
+/* destaque visual ao passar o mouse ou focar com teclado */
+.cardPerguntaResposta:hover,
+.cardPerguntaResposta:focus-visible {
+  transform: scale(1.04) translateY(-10px);
+  box-shadow: 0 30px 50px rgba(15, 23, 42, 0.18), 0 8px 22px rgba(15, 23, 42, 0.08);
+  z-index: 30; /* garante que fique acima dos outros */
+  opacity: 1;
+}
+
+/* se o cartão já estiver virado, manter o destaque similar */
+.cardPerguntaResposta.virado:hover,
+.cardPerguntaResposta.virado:focus-visible {
+  transform: rotateY(180deg) scale(1.04) translateY(-10px);
+}
+
+/* acessibilidade: outline suave no foco por teclado */
+.cardPerguntaResposta:focus-visible {
+  outline: 3px solid rgba(167, 212, 147, 0.18);
+  outline-offset: 6px;
+}
+
+/* Responsividade para tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .cardPerguntaResposta {
+    width: 18em; /* Reduz largura */
+    height: 22em; /* Reduz altura */
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 1.5em; /* Reduz padding interno */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 2em; /* Reduz fonte da pergunta */
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 4em; /* Reduz fonte do número */
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 1.1em; /* Reduz fonte do hint */
+  }
+
+  .respostaTexto {
+    font-size: 1.3em; /* Reduz fonte da resposta */
+  }
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+  .cardPerguntaResposta {
+    width: 16em; /* Reduz ainda mais */
+    height: 20em;
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 1em; /* Reduz padding */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 1.8em;
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 3.5em;
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 1em;
+  }
+
+  .respostaTexto {
+    font-size: 1.2em;
+  }
+}
+
+/* Responsividade para dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  .cardPerguntaResposta {
+    width: 14em; /* Ajuste para caber em telas pequenas */
+    height: 18em;
+  }
+
+  .cardPerguntaResposta .cardFace {
+    padding: 0.8em; /* Padding mínimo */
+  }
+
+  .cardPerguntaResposta .perguntaTexto {
+    font-size: 1.5em;
+  }
+
+  .cardPerguntaResposta .cardNumero {
+    font-size: 3em;
+  }
+
+  .cardPerguntaResposta .cardHint {
+    font-size: 0.9em;
+  }
+
+  .respostaTexto {
+    font-size: 1.1em;
+  }
+}
