@@ -52,7 +52,7 @@
                 imgSrc={imgLed}
                 imgAlt="Imagem Led"
                 Titulo="Led's"
-                Desc="Os LEDs funcionam como indicadores visuais no projeto. Cada cor pode representar uma situação diferente — por exemplo, o LED verde pode indicar que o ambiente está em condições normais, o amarelo pode sinalizar atenção e o vermelho pode indicar um alerta. Esses componentes emitem luz quando recebem corrente elétrica e são usados para mostrar de forma simples o resultado das leituras dos sensores. Para evitar que queimem, são conectados em série com resistores."
+                Desc="Os LEDs funcionam como indicadores visuais no projeto. Cada cor representa uma situação diferente — por exemplo, o LED verde indica que o ambiente está em condições normais. Esses componentes emitem luz quando recebem corrente elétrica e são usados para mostrar o resultado das leituras dos sensores. Para evitar que queimem, são conectados em série com resistores."
                 />
 
                 <HwInfoComp
@@ -179,7 +179,7 @@
                     imgSrc={imgESP32}
                     imgAlt="Imagem ESP32"
                     Titulo="Microcontrolador ESP32"
-                    Desc="O microcontrolador (como o Arduino ou ESP32) é o cérebro do projeto. Ele recebe os sinais enviados pelos sensores, processa as informações e toma decisões de acordo com a programação estabelecida. Por exemplo, ele pode acender um LED quando a temperatura estiver alta ou quando for detectada a presença de gás no ambiente. Além disso, o microcontrolador é responsável por se comunicar com o computador, permitindo que os dados sejam exibidos na tela através do monitor serial."
+                    Desc="O microcontrolador (ESP32) é o cérebro do projeto. Ele recebe os sinais enviados pelos sensores, processa as informações e toma decisões de acordo com a programação estabelecida. Por exemplo, ele pode acender um LED quando a temperatura estiver alta. Além disso, o microcontrolador é responsável por se comunicar com o computador, permitindo que os dados sejam exibidos na tela através do monitor serial."
                 />
 
             </section>

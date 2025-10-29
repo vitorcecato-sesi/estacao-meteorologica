@@ -45,20 +45,18 @@
     text-align: justify;
 }
 
-/* Media query para telas grandes (largura máxima de 1200px) */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     .hwComponentesBox {
         padding: 1em;
     }
 }
 
-/* Media query para telas médias (largura máxima de 1075px) */
-@media (max-width: 1075px) {
+@media only screen and (max-width: 1075px) {
     .hwComponentesBox {
         padding: 0.5em 0.2em;
         flex-direction: column;
         height: 90vh;
-        width: 70vw;
+        width: 30vw;
     }
 
     .hwComponentesTexto {
@@ -69,64 +67,5 @@
     .hwComponentesImg {
         width: 60%;
         height: auto;
-    }
-}
-
-/* Media query para tablets (largura máxima de 768px) */
-@media only screen and (max-width: 768px) {
-    .hwComponentesBox {
-        width: 90vw; /* Ajusta para ocupar mais largura em telas menores */
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
-        padding: 1em;
-        flex-direction: column; /* Mantém coluna para empilhar imagem e texto */
-    }
-
-    .hwComponentesImg {
-        width: 70%; /* Aumenta a imagem para melhor visibilidade */
-        height: auto;
-        padding: 0.5em;
-    }
-
-    .hwComponentesTexto {
-        width: 90%;
-        height: auto;
-        gap: 0.5em;
-    }
-
-    .hwComponentesTexto h2 {
-        font-size: 1.3em; /* Reduz fonte para caber melhor */
-    }
-
-    .hwComponentesTexto p {
-        font-size: 0.85em;
-        text-align: center; /* Centraliza texto em telas menores para melhor leitura */
-    }
-}
-
-/* Media query para celulares (largura máxima de 480px) */
-@media only screen and (max-width: 480px) {
-    .hwComponentesBox {
-        width: 95vw; /* Quase toda a largura da tela */
-        padding: 0.5em;
-        border-radius: 0.5em; /* Bordas menores para economizar espaço */
-    }
-
-    .hwComponentesImg {
-        width: 80%; /* Imagem ainda maior em telas muito pequenas */
-        padding: 0.3em;
-    }
-
-    .hwComponentesTexto {
-        width: 95%;
-        gap: 0.3em;
-    }
-
-    .hwComponentesTexto h2 {
-        font-size: 1.1em; /* Fonte menor */
-    }
-
-    .hwComponentesTexto p {
-        font-size: 0.8em;
-        line-height: 1.4; /* Melhora legibilidade */
     }
 }
