@@ -1,3 +1,4 @@
+/* Container geral do footer */
 .footerProjeto {
     background: linear-gradient(to right, #E9E9E9 100%) top/100% 1px no-repeat;
     margin-top: 3em;
@@ -5,11 +6,13 @@
     margin-left: 5em;
 }
 
+/* Container dos links */
 .linksContainer {
     padding-top: 2.5em;
     gap: 10em;
 }
 
+/* Cada link */
 .footerLink {
     padding-right: 2em;
     text-decoration: none;
@@ -19,6 +22,7 @@
     font-size: 16px;
 }
 
+/* Container dos direitos autorais */
 .direitosAutorais {
     padding-top: 4em;
     display: flex;
@@ -27,11 +31,13 @@
     justify-content: space-between ;
 }
 
+/* Imagem da logo do grupo */
 .logoFooter {
     width: 6em;
     height: auto;
 }
 
+/* Textos do container dos direitos autorais */
 .textoDireitos {
     font-family: "Roboto Mono", monospace;
     font-size: 14px;
@@ -43,8 +49,10 @@
     gap: 67.9em;
 }
 
-/* Responsividade para telas grandes (até 1200px) */
-@media (max-width: 1200px) {
+/* ------------------------------------------------------ */
+
+/* Medias Queries da página */
+@media (max-width: 1400px) {
   .footerProjeto {
     margin-right: 4em;
     margin-left: 4em;
@@ -52,11 +60,11 @@
 
   .linksContainer {
     padding-top: 2em;
-    gap: 8em; /* Reduz gap */
+    gap: 8em; 
   }
 
   .footerLink {
-    font-size: 15px; /* Reduz fonte */
+    font-size: 15px;
     padding-right: 1.5em;
   }
 
@@ -65,17 +73,18 @@
   }
 
   .logoFooter {
-    width: 5.5em; /* Reduz logo */
+    width: 5.5em; 
   }
 
   .textoDireitos {
     font-size: 13px;
     margin-left: 1.5em;
-    gap: 50em; /* Ajusta gap */
+    gap: 50em; 
   }
 }
 
-/* Responsividade para tablets (até 1024px) */
+/* ------------------------------------------------------ */
+
 @media (max-width: 1024px) {
   .footerProjeto {
     margin-right: 3em;
@@ -94,9 +103,9 @@
 
   .direitosAutorais {
     padding-top: 3em;
-    flex-direction: column; /* Empilha verticalmente */
+    flex-direction: column; 
     align-items: center;
-    gap: 1em; /* Adiciona gap entre logo e texto */
+    gap: 1em; 
   }
 
   .logoFooter {
@@ -105,14 +114,15 @@
 
   .textoDireitos {
     font-size: 12px;
-    margin-left: 0; /* Remove margem esquerda */
-    flex-direction: column; /* Empilha textos */
+    margin-left: 0; 
+    flex-direction: column; 
     gap: 0.5em;
-    text-align: center; /* Centraliza texto */
+    text-align: center; 
   }
 }
 
-/* Responsividade para telas menores (até 768px) */
+/* ------------------------------------------------------ */
+
 @media (max-width: 768px) {
   .footerProjeto {
     margin-right: 2em;
@@ -145,7 +155,8 @@
   }
 }
 
-/* Responsividade para dispositivos móveis (até 480px) */
+/* ------------------------------------------------------ */
+
 @media (max-width: 480px) {
   .footerProjeto {
     margin-right: 1em;

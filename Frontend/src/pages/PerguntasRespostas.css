@@ -19,11 +19,9 @@
 .gridPerguntasRespostas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4em 1em;    
+    gap: 4em 0em;    
     justify-items: center;
     align-items: start;
-    padding-left: 10em;
-    padding-right: 10em;
 }
 
 /* Responsividade para telas grandes (até 1200px) */
@@ -40,8 +38,8 @@
   .gridPerguntasRespostas {
     grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
     gap: 3em 1em; /* Reduz gap vertical */
-    padding-left: 8em;
-    padding-right: 8em;
+    padding-left: 2em;
+    padding-right: 1em;
   }
 }
 

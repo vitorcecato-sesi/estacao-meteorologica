@@ -1,18 +1,24 @@
-
-import Navbar from "../components/Navbar"; // Barra de navegação
+// Components
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CardPerguntaResposta from "../components/CardPerguntaResposta";
+
+// Estilização
 import "./PerguntasRespostas.css";
 
+// Componente PerguntasRespostas
 export default function PerguntasRespostas() {
     return (
         <>
+            {/* Componente NAVBAR */}
             <Navbar />
 
+            {/* Titulo */}
             <section className="tituloPagina">
                 <h1>Perguntas e Respostas</h1>
             </section>
 
+            {/* Grid (Container) de Perguntas e Respostas, cada um é enviado por props ao componente */}
             <section className="gridPerguntasRespostas">
                 <CardPerguntaResposta
                     pergunta="O que significa a sigla MQTT?"
@@ -159,6 +165,7 @@ export default function PerguntasRespostas() {
             <br />
             <br />
 
+            {/* Componente FOOTER */}
             <Footer />
         </>
     )
