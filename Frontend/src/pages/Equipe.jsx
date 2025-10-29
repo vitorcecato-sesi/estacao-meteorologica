@@ -18,20 +18,20 @@ import Vitor from "../assets/Img6R.png";
 import "./Equipe.css";
 
 // Importa componentes reutilizáveis (menu e rodapé)
-
-
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 // Declara o componente principal da página "Equipe"
 export default function Equipe() {
   return (
     <>
       {/* Navbar é o menu fixo que aparece no topo da página */}
-      
-
+      <Navbar />
       {/* Cabeçalho da página Equipe */}
       <section className="headerPaginaEquipe">
         <h1 className="enfeiteEquipe"> | </h1> {/* Barra decorativa */}
         <h1 className="tituloEquipe"> Equipe </h1> {/* Título principal */}
-        <img className="simboloEquipe" src={Img} alt="Simbolo Equipe" /> {/* Ícone decorativo */}
+        <img className="simboloEquipe" src={Img} alt="Simbolo Equipe" />{" "}
+        {/* Ícone decorativo */}
       </section>
 
       <article>
@@ -105,7 +105,8 @@ export default function Equipe() {
                   <div className="texto-hover">
                     <p className="nome-hover">Funções</p>
                     <p className="funcao-hover">
-                      •Wireframe ( Projeto , Perguntas e Respostas , Resultados )
+                      •Wireframe ( Projeto , Perguntas e Respostas , Resultados
+                      )
                     </p>
                     <p className="funcao-hover">
                       •Programação ( Página Projeto e Resultados )
@@ -230,7 +231,7 @@ export default function Equipe() {
       </article>
 
       {/* Rodapé com informações finais */}
-  
+      <Footer />
     </>
   );
 }
