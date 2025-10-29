@@ -9,10 +9,8 @@ export default function Navbar() {
   return (
 
     <header className="navbar">
-      {/* Texto-título */}
-      <section className="logoTexto">
-        Grupo 3
-      </section>
+      {/* Texto-título - agora é um link para a página 'Equipe' */}
+      <NavLink to="/equipe" className="logoTexto"> Grupo 3 </NavLink>
 
       {/* Input checkbox para controlar o menu hambúrguer */}
       <input type="checkbox" id="menu-toggle" style={{ display: 'none' }} />

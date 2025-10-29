@@ -22,6 +22,8 @@
   align-items: center;
   letter-spacing: -2px;
   margin-left: 2em;
+  text-decoration: none;
+  color: black;
 }
 
 /* Section do menu das páginas (links) */
