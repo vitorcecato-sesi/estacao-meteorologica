@@ -6,6 +6,7 @@
 // Componentes
   import Navbar from "../components/Navbar";
   import HwInfoComp from "../components/hwInfoComp";
+  import Footer from "../components/Footer";
 //.
 
 // Imagens
@@ -184,6 +185,7 @@
 
             </section>
         </section>
+        <Footer />
       </section>
     </>
   );
