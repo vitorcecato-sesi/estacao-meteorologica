@@ -7,14 +7,14 @@ import "./App.css";
 // Páginas
 import Home from "./pages/Home";
 import Hardware from "./pages/Hardware";
+import PerguntasRespostas from './pages/PerguntasRespostas'
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/hardware" element={<Hardware />} />
+          <Route path='/' element={<Home/>} /> 
         </Routes>
       </BrowserRouter>
     </>
