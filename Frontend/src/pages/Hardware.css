@@ -39,7 +39,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-
     height: 20vh;
     width: 100%;
     background-color: #6B8B14;
@@ -49,7 +48,7 @@
 .hwSecComponentes {
     display: flex;
     flex-direction: row;
-    align-items: center ;
+    align-items: center;
     justify-content: space-evenly;
     width: 100%;
     height: 80%;
@@ -86,8 +85,84 @@
     color: #BCDAB1;
 }
 
-@media only screen and (max-width: 1075px) {
+/* Media query para tablets (largura máxima de 768px) */
+@media (max-width: 1000px) {
+    .hwTituloBox {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        gap: 1em;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .hwBorderTitulo {
+        width: 100%;
+        height: 0.5vh;
+        margin-bottom: 1em;
+    }
+
+    .hwTitulo {
+        font-size: 4em;
+    }
+
+    .hwImgHeader {
+        height: 20vh;
+        width: 20vh;
+    }
+
+    .hwArticle {
+        height: auto;
+        padding: 2em 1em;
+        font-size: 0.9em;
+    }
+
+    .hwSecComponentes {
+        flex-direction: column;
+        gap: 2em;
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .hwC1Componentes,
+    .hwC2Componentes {
+        height: auto;
+        gap: 1.5em;
+    }
+
     .hwIcons {
-        gap: 1.4em;
+        display: none; /* Oculta os ícones em telas menores para simplificar o layout */
+    }
+}
+
+/* Media query para celulares (largura máxima de 480px) */
+@media only screen and (max-width: 480px) {
+    .hwTituloBox {
+        width: 100%;
+        padding: 1em;
+    }
+
+    .hwTitulo {
+        font-size: 3em;
+    }
+
+    .hwImgHeader {
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .hwArticle {
+        padding: 1.5em 0.5em;
+        font-size: 0.8em;
+    }
+
+    .hwSecComponentes {
+        padding: 1em 0.5em;
+        gap: 1em;
+    }
+
+    .hwC1Componentes,
+    .hwC2Componentes {
+        gap: 1em;
     }
 }
