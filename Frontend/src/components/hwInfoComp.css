@@ -69,3 +69,41 @@
         height: auto;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .hwComponentesBox {
+        width: 80vw;
+        flex-direction: row;
+        height: 40vh;
+        gap: 1em;
+    }
+    .hwComponentesImg {
+        width: 25%;
+    }
+    .hwComponentesTexto {
+        width: 65%;
+    }
+    .hwComponentesTexto h2 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .hwComponentesImg {
+        display: none;
+    }
+    .hwComponentesBox {
+        width: 70vw;
+        padding: 1em;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hwComponentesTexto {
+        width: 90vw;
+        padding: 0.5em;
+    }
+    
+}
