@@ -191,3 +191,170 @@
     font-family: Crimson Text, serif;
     
 }
+
+
+@media (max-width: 1075px) {
+    .simboloSoftware{
+        padding-top: 6em;
+    }
+
+    .blocoArduinoIDE{
+        height: 30vw;
+    }
+
+    .blocoArduinoIDE{
+        align-items: center;
+    }
+
+    .paragrafoBoardEPorta{
+        height: 47vh;
+    }
+}
+
+@media (max-width: 950px) {
+    .paragrafoBoardEPorta{
+        width: 35vw;
+    }
+
+    .tabPanel{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tabImage{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 870px) {
+    .blocoArduinoIDE{
+        height: 58vh;
+    }
+
+    .blocoBoardEPorta{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 70vw;
+        height: 27vh;
+        padding-bottom: 5em;
+    }
+
+    .blocoConfiguracoes{
+        flex-direction: column-reverse;
+    }
+
+    .textoConfiguracoes{
+        width: 75vw;
+    }
+}
+
+@media (max-width: 701px) {
+    .blocoArduinoIDE{
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .paragrafoArduinoIDE{
+        width: 90vw;
+    }
+}
+
+@media (max-width: 669px) {
+    .softwareTabs{
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .softwareTab{
+        padding: 1em;
+    }
+}
+
+@media (max-width: 543px) {
+    .tituloSoftware{
+        font-size: 4em;
+    }
+
+    .enfeiteSoftware{
+        font-size: 3.5em;
+    }
+
+    .simboloSoftware{
+        height: 10vh;
+        padding-top: 4em;
+    }
+
+    .blocoArduinoIDE{
+        height: 95vh;
+    }
+}
+
+@media (max-width: 543px) {
+    .paragrafoBoardEPorta{
+        height: 40vh;
+    }
+
+    .linkIDE{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .tituloSoftware{
+        font-size: 3.5em;
+    }
+
+    .enfeiteSoftware{
+        font-size: 3em;
+    }
+
+    .simboloSoftware{
+        height: 9vh;
+        padding-top: 3.2em;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 60vw;
+    }
+
+    .tabImage{
+        width: 63vw;
+    }
+}
+
+@media (max-width: 494px) {
+    .paragrafoBoardEPorta{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 438px) {
+    .fotoConfiguracoes{
+        height: 20vh;
+    }
+
+    .fotoBoardEPorta{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 438px) {
+    .tabPanel{
+        width: 62vw;
+
+    }
+}
+
+@media (max-width: 438px) {
+    .fotoConfiguracoes{
+        height: 12vh;
+    }
+
+    .fotoBoardEPorta{
+        height: 30vh;
+    }
+}
