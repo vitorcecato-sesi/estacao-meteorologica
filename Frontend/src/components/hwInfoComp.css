@@ -1,0 +1,109 @@
+.hwComponentesBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 2px solid #165700;
+    border-radius: 1em;
+    padding: 2em 1em;
+
+    width: 40vw;
+    height: 40vh;
+}
+
+.hwComponentesImg {
+    width: 25%;
+    height: 50%;
+    padding: 0.5em;
+    border: 2px solid #84848446;
+    border-radius: 1em;
+}
+
+.hwComponentesTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0em;
+    width: 60%;
+    height: 90%;
+}
+
+.hwComponentesTexto h2 {
+    font-family: "Crimson Text", serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.hwComponentesTexto p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1200px) {
+    .hwComponentesBox {
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 1075px) {
+    .hwComponentesBox {
+        padding: 0.5em 0.2em;
+        flex-direction: column;
+        height: 90vh;
+        width: 30vw;
+    }
+
+    .hwComponentesTexto {
+        height: auto;
+        width: 85%;
+    }
+
+    .hwComponentesImg {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hwComponentesBox {
+        width: 80vw;
+        flex-direction: row;
+        height: 40vh;
+        gap: 1em;
+    }
+    .hwComponentesImg {
+        width: 25%;
+    }
+    .hwComponentesTexto {
+        width: 65%;
+    }
+    .hwComponentesTexto h2 {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .hwComponentesImg {
+        display: none;
+    }
+    .hwComponentesBox {
+        width: 70vw;
+        padding: 1em;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .hwComponentesTexto {
+        width: 90vw;
+        padding: 0.5em;
+    }
+    
+}
