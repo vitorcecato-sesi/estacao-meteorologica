@@ -59,7 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30em;
+    gap: 20em;
     padding-top: 2em;
 }
 
@@ -238,6 +238,7 @@
     padding-top: 5em;
 }
 
+/* Container das imagens */
 .imagensProjeto {
     display: flex;
     flex-direction: row;
@@ -254,6 +255,7 @@
     border-radius: 70px;
 }
 
+/* Mexendo a primeira linha de imagens, onde vai abaixar um pouco comparado com a outra linha */
 .linhaImagem1 {
     display: flex;
     flex-direction: column;
@@ -261,38 +263,44 @@
     padding-top: 10em;
 }
 
+/* Mexendo na segunda linha de imagens */
 .linhaImagem2 {
     display: flex;
     flex-direction: column;
     gap: 5em;
 }
 
-/* Media Queries para Responsividade e Remoções */
+/* ------------------------------------------------------ */
 
+/* Media Queries para Responsividade e Remoções */
 @media (max-width: 1200px) {
     .textoPrincipal {
-        font-size: 120px; /* Redução para caber */
+        font-size: 120px;
         letter-spacing: -4px;
     }
     .tituloObjetivo, .tituloIntegracaoMulti {
-        font-size: 50px; /* Leve redução para caber */
+        font-size: 50px;
+    }
+    .containerTextoTituloObjetivo {
+        margin-top: -7em;
     }
     .containerTextosObjetivo {
-        gap: 4em; /* Gap menor */
+        gap: 4em;
         flex-direction: column;
     }
     .caixaDeTextoObjetivo {
-        max-width: 90%; /* Ajuste para 2 colunas */
+        max-width: 90%; 
     }
     .tituloIntegracaoMulti {
         margin-top: -1em;
     }
     .imagensProjeto {
-        gap: 5em; /* Gap menor */
+        gap: 5em; 
     }
     .imagemProjeto {
-        width: 20em; /* Menor */
+        width: 20em;
     }
+
     /* Remoções */
     .cardImagemContainer {
         display: none;
@@ -305,7 +313,8 @@
     }
 }
 
-/* Mobile (até 767px) */
+/* ------------------------------------------------------ */
+
 @media (max-width: 830px) {
     .textoPrincipal {
         font-size: 80px; /* Redução significativa para caber */
@@ -313,7 +322,7 @@
         line-height: 1em;
     }
     .containerTextoTituloObjetivo {
-        margin-top: -10em;
+        margin-top: -16em;
     }
     .tituloObjetivo {
         font-size: 40px; /* Menor */

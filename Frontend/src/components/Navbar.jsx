@@ -7,6 +7,7 @@ import "./Navbar.css";
 /* Componente NAVBAR */
 export default function Navbar() {
   return (
+
     <header className="navbar">
       {/* Texto-título */}
       <section className="logoTexto">
@@ -43,6 +44,7 @@ export default function Navbar() {
       >
         GitHub 🡥
       </a>
+      
     </header>
   );
 }
