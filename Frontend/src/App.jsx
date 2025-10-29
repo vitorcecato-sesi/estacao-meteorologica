@@ -7,6 +7,7 @@
 // Páginas
 import Home from './pages/Home'
 import PerguntasRespostas from './pages/PerguntasRespostas'
+import Wokwi from './pages/Wokwi'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>} /> 
           <Route path='/perguntasRespostas' element={<PerguntasRespostas />} />
+          <Route path='/simulacao' element={<Wokwi />} />
         </Routes>
       </BrowserRouter>
     </>

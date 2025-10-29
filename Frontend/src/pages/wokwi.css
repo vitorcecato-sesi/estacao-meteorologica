@@ -18,16 +18,20 @@
 .blockDeExplicação{
 align-items: center;
     background-color: #7B8E5C;
+    
 
 }
 .imgDoLado{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 4em;
     align-items: center;
     text-align: justify;
-    width: 40em;
+    width: 60em;
     margin: auto;
+    padding: 2em;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .tituloDaExplicação{
@@ -46,10 +50,142 @@ align-items: center;
 .imgDoLado2{
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 3em;
     align-items: center;
     text-align: justify;
-    width: 57em;
+    width: 70em;
     margin: auto;
+    margin-bottom: 5em;
+ font-family: 'Times New Roman', Times, serif;
+}
 
+
+.imagem-wokwi2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    height: 20em;
+    margin-bottom: 4em;
+    
+
+    border-radius: 10px;}
+    .imagemcomponente {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15em;
+    height: 10em;
+    margin-bottom: 1em;
+    
+    }
+.wokwi-button {
+    display: block;
+    width: fit-content;
+    padding: 0.8em 1.5em;
+    margin: 1em auto;
+    background-color: #4A5D2E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wokwi-button:hover {
+    background-color: #5B7339;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.titulosection{
+     
+    font-weight: bold; 
+    margin-top: 5em;
+}
+
+/* --- Responsividade para 1240px e 768px --- */
+@media (max-width: 1240px) {
+    /* reduzir larguras fixas e espaçamentos para telas médias */
+    .imgDoLado,
+    .imgDoLado2 {
+        width: 90%;
+        gap: 2em;
+        padding: 1.5em;
+    }
+
+    .imagem-wokwi {
+        width: 6.5em;
+    }
+
+    .imagem-wokwi2 {
+        width: 16em;
+        height: auto;
+    }
+
+    .imagemcomponente {
+        width: 13em;
+        height: auto;
+    }
+
+    .titulo1 {
+        margin-left: 1.5em;
+    }
+
+    .titulosection {
+        margin-top: 3.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    /* layout em coluna para dispositivos móveis e ajustes de fonte/imagem */
+    .imgDoLado,
+    .imgDoLado2 {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        gap: 1.2em;
+        padding: 1em;
+        align-items: center;
+    }
+
+    .imagem-wokwi {
+        width: 8.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .imagem-wokwi2,
+    .imagemcomponente {
+        width: 90%;
+        height: auto;
+        margin: 0 auto 1em auto;
+    }
+
+    .titulo1 {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    .tituloDaExplicacao {
+        font-size: 1.2em;
+    }
+
+    .titulosection {
+        margin-top: 2em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+
+    /* garantir que o botão continue centralizado */
+    .wokwi-button {
+        display: block;
+        width: fit-content;
+        margin: 1.2em auto;
+    }
 }
