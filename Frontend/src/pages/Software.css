@@ -1,0 +1,349 @@
+.headerPaginaSoftware{
+    flex-direction: row;
+    display: flex;
+    gap: 2em;
+}
+
+.simboloSoftware{
+    height: 12vh;
+    padding-top: 5em;
+    transition: transform 0.5s ease-in-out;
+}
+
+.simboloSoftware:hover {
+    transform: rotateY(180deg); /* Gira 360 graus no sentido horário */
+}
+
+.enfeiteSoftware{
+    padding-left: 1em;
+    font-size: 5em;
+    color: rgb(75, 75, 75);
+}
+
+.tituloSoftware{
+    font-size: 5.5em;
+    font-family: Crimson Text, serif;
+    font-weight: 400;
+}
+
+.blocoArduinoIDE{
+    background-color: #8E9C78;
+    height: 40vh;
+    font-family: Crimson Text, serif;
+    font-size: 1.1em;
+}
+
+.logoArduinoIDE{
+    height: 35vh;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    background-color: #8CBC76;
+    transition: 0.5s; /* Transição suave */
+}
+
+.logoArduinoIDE:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do elemento */
+    transition: 0.5s; /* Transição suave */
+}
+
+.blocoArduinoIDE{
+    display: flex;
+    flex-direction: row;
+    padding: 3em;
+    justify-content: space-around;
+}
+
+.paragrafoArduinoIDE{
+    width: 40vw;
+    font-size: 1.2em;
+}
+
+.blocoConfiguracoes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.textoConfiguracoes{
+    width: 40vw;
+    font-family: Crimson Text, serif;
+    font-size: 1.2em;
+}
+
+.fotoConfiguracoes{
+    height: 25vh;
+} 
+
+.paragrafoBoardEPorta{
+    background-color: #BCDAB1;
+    width: 30vw;
+    padding: 4em;
+    border-radius: 5em;
+    font-family: Crimson Text, serif;
+    font-size: 1.2em;
+}
+
+.blocoBoardEPorta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2em;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.fotoBoardEPorta{
+    height: 58vh;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------------------------------------- */
+/* Parte das Abas */
+
+.blocoPartesCodigo{
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+
+.tituloPartesCodigo{
+    font-family: Crimson Text, serif;
+    padding-left: 1em;
+    padding-bottom: 0.5em;
+}
+
+.softwareTabs{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5em;
+    padding-right: 9em;
+}
+
+.softwareTab{
+    background: transparent;
+    border: 2px solid transparent;
+    padding: 0.6em 3em;
+    cursor: pointer;
+    font-family: Crimson Text, serif;
+    font-size: 1.3rem;
+    transition: all 0.2s ease;
+}
+
+
+.softwareTab.active{
+    background: #8E9C78;
+    border-color: rgba(0,0,0,0.08);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.softwareContent{
+    display: flex;
+}
+
+/* painel visível */
+.tabPanel.show{
+    display: flex;
+    align-items: center;
+    background-color: #8E9C78;
+    padding: 2em;
+    padding-left: 3em;
+    padding-right: 5em;
+    gap: 10em;
+    font-family: Crimson Text, serif;
+    font-size: 1.2em;   
+}
+
+/* painel oculto */
+.tabPanel.hide{
+    display: none;
+}
+
+.tabImage{
+    width: 40vw;
+}   
+
+.linkIDE{
+    background-color: #BCDAB1;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    padding: 0.7em;
+    border-radius: 10em;
+    display: flex;
+    justify-self: center;
+    font-size: 1.3em;
+    font-family: Crimson Text, serif;
+    text-align: center;
+}
+
+.ultimoParagrafo{
+    background-color: #AACB9B;
+    padding: 1em 2em; 
+    border-radius: 4em;
+    display: flex;
+    justify-self: center;
+    width: 70vw;
+    font-size: 1.3em;
+    text-align: center;
+    font-family: Crimson Text, serif;
+    
+}
+
+
+@media (max-width: 1075px) {
+    .simboloSoftware{
+        padding-top: 6em;
+    }
+
+    .blocoArduinoIDE{
+        height: 30vw;
+    }
+
+    .blocoArduinoIDE{
+        align-items: center;
+    }
+
+    .paragrafoBoardEPorta{
+        height: 47vh;
+    }
+}
+
+@media (max-width: 950px) {
+    .blocoArduinoIDE{
+        height: 58vh;
+    }
+
+    .blocoBoardEPorta{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 70vw;
+        height: 27vh;
+        padding-bottom: 5em;
+    }
+
+    .blocoConfiguracoes{
+        flex-direction: column-reverse;
+    }
+
+    .textoConfiguracoes{
+        width: 75vw;
+    }
+
+    .tabPanel{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .tabImage{
+        width: 55vw;
+    }
+}
+
+@media (max-width: 701px) {
+    .blocoArduinoIDE{
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .paragrafoArduinoIDE{
+        width: 90vw;
+    }
+
+    .tabImage{
+        width: 64vw;
+    }
+}
+
+@media (max-width: 669px) {
+    .softwareTabs{
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .softwareTab{
+        padding: 1em;
+    }
+
+    .fotoBoardEPorta{
+        height: 40vh;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 45vw;
+        padding-bottom: 8em;
+    }
+}
+
+@media (max-width: 543px) {
+    .tituloSoftware{
+        font-size: 4em;
+    }
+
+    .enfeiteSoftware{
+        font-size: 3.5em;
+    }
+
+    .simboloSoftware{
+        height: 10vh;
+        padding-top: 4em;
+    }
+
+    .blocoArduinoIDE{
+        height: 95vh;
+    }
+
+    .fotoConfiguracoes{
+        height: 15vh;
+    }
+
+    .paragrafoBoardEPorta{
+        height: 40vh;
+    }
+
+    .linkIDE{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .tituloSoftware{
+        font-size: 3.5em;
+    }
+
+    .enfeiteSoftware{
+        font-size: 3em;
+    }
+
+    .simboloSoftware{
+        height: 9vh;
+        padding-top: 3.2em;
+    }
+
+    .paragrafoBoardEPorta{
+        width: 55vw;
+        height: 40vh;
+    }
+
+    .tabImage{
+       
+    }
+}
+
+@media (max-width: 438px) {
+    .fotoConfiguracoes{
+        height: 10=3vh;
+    }
+
+    .fotoBoardEPorta{
+        height: 30vh;
+    }
+    
+    .tituloPartesCodigo{
+        font-size: 1.5em;
+    }
+}
