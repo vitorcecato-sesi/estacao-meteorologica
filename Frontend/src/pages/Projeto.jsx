@@ -1,5 +1,5 @@
 import "./Projeto.css";
-import diagrama from "../assets/diagrama.png";
+import diagrama from "../assets/Diagrama.png";
 import fotoProjeto from "../assets/projeto1.png";
 
 import Navbar from "../components/Navbar"
