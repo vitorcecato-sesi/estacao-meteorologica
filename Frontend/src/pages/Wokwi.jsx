@@ -11,7 +11,7 @@ function Wokwi() {
     <>
     <Navbar />
     <section className="titulo1">
-      <h1>Simulação Wolwi </h1>
+      <h1>Simulação Wokwi </h1>
       
       </section>
       <section className='blockDeExplicação'>
