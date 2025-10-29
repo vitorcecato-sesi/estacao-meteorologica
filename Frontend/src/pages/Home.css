@@ -37,8 +37,9 @@
     height: auto;
     border-radius: 12px;
     box-shadow: 0 18px 30px rgba(0, 0, 0, 0.3);
-    transform: translateY(-84.8px);
+    transform: translateY(-107px);
     overflow: hidden;
+    position: relative;
 }
 
 /* ------------------------------------------------------ */
@@ -215,8 +216,9 @@
     font-weight: 400;
     writing-mode: vertical-rl;
     transform: rotate(360deg);
+    padding: 1em;
     color: #6F6F6F;
-    max-width: 1em;
+    max-width: 0px;
 }
 
 /* Imagem Integração Multidisciplinar */
@@ -263,4 +265,93 @@
     display: flex;
     flex-direction: column;
     gap: 5em;
+}
+
+/* Media Queries para Responsividade e Remoções */
+
+@media (max-width: 1200px) {
+    .textoPrincipal {
+        font-size: 120px; /* Redução para caber */
+        letter-spacing: -4px;
+    }
+    .tituloObjetivo, .tituloIntegracaoMulti {
+        font-size: 50px; /* Leve redução para caber */
+    }
+    .containerTextosObjetivo {
+        gap: 4em; /* Gap menor */
+        flex-direction: column;
+    }
+    .caixaDeTextoObjetivo {
+        max-width: 90%; /* Ajuste para 2 colunas */
+    }
+    .tituloIntegracaoMulti {
+        margin-top: -1em;
+    }
+    .imagensProjeto {
+        gap: 5em; /* Gap menor */
+    }
+    .imagemProjeto {
+        width: 20em; /* Menor */
+    }
+    /* Remoções */
+    .cardImagemContainer {
+        display: none;
+    }
+    .textoTrusted, .containerLogosTrusted {
+        display: none;
+    }
+    .imgIntegracaoMulti {
+        display: none;
+    }
+}
+
+/* Mobile (até 767px) */
+@media (max-width: 830px) {
+    .textoPrincipal {
+        font-size: 80px; /* Redução significativa para caber */
+        letter-spacing: -3px;
+        line-height: 1em;
+    }
+    .containerTextoTituloObjetivo {
+        margin-top: -10em;
+    }
+    .tituloObjetivo {
+        font-size: 40px; /* Menor */
+    }
+    .containerTextosObjetivo {
+        flex-direction: column; /* Empilha para evitar overflow */
+        gap: 3.5em;
+    }
+    .caixaDeTextoObjetivo {
+        max-width: 90%; /* Largura total */
+    }
+    .tituloIntegracaoMulti {
+        font-size: 40px; /* Menor */
+        margin-top: -0.8em;
+    }
+    .subtituloObjetivo {
+        margin-top: 8em;
+    }
+    .imagensProjeto {
+        flex-direction: column; /* Empilha imagens */
+        gap: 2em;
+        padding-left: 10em;
+    }
+    .imagemProjeto {
+        width: 60%; /* Largura total */
+        border-radius: 50px; /* Menos arredondado */
+    }
+    .linhaImagem1, .linhaImagem2 {
+        gap: 2em;
+    }
+    /* Remoções */
+    .cardImagemContainer {
+        display: none;
+    }
+    .textoTrusted, .containerLogosTrusted {
+        display: none;
+    }
+    .imgIntegracaoMulti {
+        display: none;
+    }
 }

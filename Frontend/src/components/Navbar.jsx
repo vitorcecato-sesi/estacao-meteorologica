@@ -8,11 +8,20 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <header className="navbar">
-
       {/* Texto-título */}
       <section className="logoTexto">
         Grupo 3
       </section>
+
+      {/* Input checkbox para controlar o menu hambúrguer */}
+      <input type="checkbox" id="menu-toggle" style={{ display: 'none' }} />
+
+      {/* Label do hambúrguer */}
+      <label htmlFor="menu-toggle" className="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
       {/* Links de navegação */}
       <nav className="navlinks">
@@ -21,7 +30,7 @@ export default function Navbar() {
         <NavLink to="/simulacao"> Simulação Wokwi </NavLink>
         <NavLink to="/hardware"> Hardware </NavLink>
         <NavLink to="/software"> Software </NavLink>
-        <NavLink to="/perguntas"> Perguntas e Respostas </NavLink>
+        <NavLink to="/perguntasRespostas"> Perguntas e Respostas </NavLink>
         <NavLink to="/resultados"> Resultados </NavLink>
         <NavLink to="/equipe"> Equipe </NavLink>
       </nav>
